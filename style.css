@@ -1,37 +1,85 @@
-<style>
 
-body{
-    color: #52528C;
-    background-color: #52528C;
-}
 
 #description {
     font-family: sans-serif;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 1;
     background-color: black;
     color: #7C9EB2;
+    width: 800px;
+    border-radius: 10%;
+    margin-left: 500px;
+    margin-top: 0%;
 }
-
-h1{
-    text-align: center;
-    background-color: #372554;
-    color: #7C9EB2;
-    padding: 20px 40px 20px 40px;
+#description:hover{
+    background-color: azure;
+    color: #52528C;
+    transition: 0.5s;
 }
-div {
-    text-align: center;
-  }
-ul{
-    font-style: italic;
-    font-size: 14px;
-
-}
-#up{
-    color: black;
-    background-color: #231123;
-    padding: 15px 30px;
+a:link{
     text-decoration: none;
 }
 
-</style>
+strong{
+    font-weight: 900px;
+}
+
+div {
+    line-height: 15px;
+    text-align: center;
+    background-color: #52528C
+}
+
+img{
+    border-radius: 20%;
+}
+
+ul{
+    font-style: italic;
+    font-size: 14px;
+    background-color: chocolate;
+    margin: 0px;
+    width: 300px;
+}
+
+ul li:hover{
+    transition: 0.5s;
+    background-color: crimson;
+}
+
+a.up{
+    background-color: #231123;
+    height: 20px;
+    width: 150px;
+    text-decoration:none;
+    color: wheat;
+}
+h1{
+    position:relative;
+    background-color: #372554;
+    color: #7C9EB2;
+    height: 50px;
+    width: 500px;
+    border-radius: 5%;
+    margin-left: 37%;
+    text-align: center;
+}
+h1:active{
+    color: cyan;
+}
+h3{
+    
+    margin: 0%;
+    block-size: 30px;
+    background-color: #52528C;
+}
+h3:link{color: greenyellow;}
+h3:hover{
+    color: greenyellow;
+    text-align: center;
+    transition: 1.5s;}
+h3:visited{color: greenyellow;}
+h3 a{color: black;}
+h3 a:hover{
+    color: greenyellow;
+    transition: 1.5s;}
