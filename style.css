@@ -1,4 +1,4 @@
-
+body{background-color: teal;}
 
 #description {
     font-family: sans-serif;
@@ -13,7 +13,6 @@
     margin-top: 0%;
     overflow:visible;
     text-align: justify;
-    ;
 }
 #description:hover{
     background-color: azure;
@@ -30,13 +29,14 @@ strong{
 
 div {
     line-height: 15px;
-    text-align: center;
+  
     background-color: #52528C;   
 }
 
 img{
     border-radius: 20%;
     position: absolute;
+    margin-left: 50%;
 }
 
 ul{
@@ -49,7 +49,7 @@ ul{
 li:nth-of-type(odd){
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: 18px;
-
+}
 ul li:hover{
     transition: 0.5s;
     background-color: crimson;
