@@ -1,15 +1,22 @@
 body{background-color: teal;}
 
+#profile-pic {
+    border-radius: 5%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 #description {
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 1;
-    background-color: black;
+    background-color: rgb(24, 24, 24);
     color: #7C9EB2;
     width: 400px;
     height: 400px;
-    border-radius: 10%;
-    margin-left: 500px;
+    padding: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-top: 0%;
     overflow:visible;
     text-align: justify;
@@ -33,12 +40,6 @@ div {
     background-color: #52528C;   
 }
 
-img{
-    border-radius: 20%;
-    position: absolute;
-    margin-left: 50%;
-}
-
 ul{
     font-style: italic;
     font-size: 14px;
@@ -55,6 +56,19 @@ ul li:hover{
     background-color: crimson;
 }
 
+nav {
+    padding-block: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-button {
+    font-size: 20px;
+    font-weight: 900;
+    height: 90px;
+    width: 150px;
+}
+
 a.up{
     background-color: #231123;
     height: 20px;
@@ -62,14 +76,14 @@ a.up{
     text-decoration:none;
     color: wheat;
 }
-h1{
-    position:relative;
+#title{
     background-color: #372554;
     color: #7C9EB2;
     height: 50px;
     width: 500px;
-    border-radius: 50%;
-    margin-left: 37%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
     text-align: center;
     padding: 30px;
 }

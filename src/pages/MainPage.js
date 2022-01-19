@@ -1,12 +1,24 @@
 import React from 'react';
 import ProfilePicture from '../images/Linkedin.jpg';
+import './style.css'
 
 export default function MainPage() {
   return (
     <div>
-      <h1>Portfolio: Arthur T. Santos</h1>
-      <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" />
-      <h4>
+      <nav>
+        <button type='button' className='nav-button'>
+          Home
+        </button>
+        <button type='button' className='nav-button'>
+          About
+        </button>
+        <button type='button' className='nav-button'>
+          My Projects
+        </button>
+      </nav>
+      <h1 id="title">Portfolio: Arthur T. Santos</h1>
+      <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' />
+      <h4 id='description'>
         Born in <em>Sao Paulo City, Brazil,</em> Arthur is a person with a lot of determination
         and is trying to be the change in the world doing what he can with his knowledge
         and physical capabilities. Always updating himself with information from cutting
