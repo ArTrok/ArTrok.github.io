@@ -13,7 +13,7 @@ body{background-color: teal;}
     background-color: rgb(24, 24, 24);
     color: #7C9EB2;
     width: 400px;
-    height: 400px;
+    height: fit-content;
     padding: 10px;
     margin-left: 50%;
     transform: translateX(-50%);
