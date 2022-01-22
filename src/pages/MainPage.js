@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProfilePicture from '../images/Linkedin.jpg';
 import './style.css'
 
@@ -6,15 +7,15 @@ export default function MainPage() {
   return (
     <div>
       <nav>
-        <button type='button' className='nav-button'>
+        <Link to="/" className='nav-button'>
           Home
-        </button>
-        <button type='button' className='nav-button'>
+        </Link>
+        <Link to="/about" className='nav-button'>
           About
-        </button>
-        <button type='button' className='nav-button'>
+        </Link>
+        <Link to="/projects" className='nav-button'>
           My Projects
-        </button>
+        </Link>
       </nav>
       <h1 id="title">Portfolio: Arthur T. Santos</h1>
       <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' />
