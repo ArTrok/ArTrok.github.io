@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import MainPage from './pages/MainPage';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router';
