@@ -1,14 +1,14 @@
 import './App.css';
 import React from 'react';
 import MainPage from './pages/MainPage';
-import { Switch } from 'react-router-dom';
-import { Route } from 'react-router';
+// import { Switch } from 'react-router-dom';
+import { Route, Router } from 'react-router';
 
 function App() {
   return (
-    <Switch>
+    <Router>
       <Route exact path="/" component={ MainPage }  />
-    </Switch>
+    </Router>
   );
 }
 
