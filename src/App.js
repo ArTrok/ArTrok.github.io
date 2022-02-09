@@ -2,13 +2,13 @@ import './App.css';
 import React from 'react';
 import MainPage from './pages/MainPage';
 // import { Switch } from 'react-router-dom';
-import { Route, Router } from 'react-router';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/" component={ MainPage }  />
-    </Router>
+    <Routes>
+      <Route exact path="/" element={ <MainPage /> }  />
+    </Routes>
   );
 }
 
