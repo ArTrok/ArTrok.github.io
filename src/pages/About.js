@@ -1,7 +1,13 @@
 import React from 'react';
 
 const About = () => {
-  return <div>ABOUT PAGE</div>;
+  return (
+    <>
+     <div>
+      Just the page about my self.  
+     </div> 
+    </>
+  );
 };
 
 export default About;
