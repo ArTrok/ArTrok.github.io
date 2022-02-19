@@ -16,6 +16,9 @@ export default function MainPage() {
         <Link to="/projects" className='nav-button'>
           My Projects
         </Link>
+        <Link to="/skills" className='nav-button'>
+          Skills
+        </Link>
       </nav>
       <h1 id="title">Portfolio: Arthur T. Santos</h1>
       <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' />
