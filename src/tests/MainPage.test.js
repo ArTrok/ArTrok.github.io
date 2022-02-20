@@ -11,9 +11,9 @@ describe('Main Page', () => {
   // });
   it('should have nav buttons', () => {
     renderWithRouter(<App />);
-    for (const texts of NAV_BUTTONS) {
-      const navButtons = screen.getByTestId(texts);
+    // for (const texts of NAV_BUTTONS) {
+      const navButtons = screen.getByTestId(NAV_BUTTONS[0]);
       expect(navButtons).toBeInTheDocument();
-    }
+    // }
   });
 });
