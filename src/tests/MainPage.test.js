@@ -14,4 +14,13 @@ describe('Main Page', () => {
       expect(navButtons).toBeDefined();
     }
   });
+
+  it('should have a profile picture', () => {
+    const profilePic = screen.getByTestId('profile_pic');
+    expect(profilePic).toBeDefined();
+  });
+
+  it('should have my name on it', () => {
+    const myName = screen.getByRole()
+  });
 });
