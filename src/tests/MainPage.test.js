@@ -21,6 +21,9 @@ describe('Main Page', () => {
   });
 
   it('should have my name on it', () => {
-    const myName = screen.getByRole()
+    const myName = screen.getByRole('heading', {level: 1});
+    expect(myName).toBeDefined();
   });
+
+  it()
 });
