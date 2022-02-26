@@ -23,8 +23,8 @@ export default function MainPage() {
           Contact
         </Link>
       </nav>
-      <h1 id="title">Portfolio: Arthur T. Santos</h1>
-      <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' />
+      <h1 id="title">Arthur Teixeira Santos</h1>
+      <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' data-testid="profile_pic" />
       <p id='description'>
         Looking to get recognized as a developer throughout my actions.
       </p>
