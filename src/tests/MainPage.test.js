@@ -25,5 +25,10 @@ describe('Main Page', () => {
     expect(myName).toBeDefined();
   });
 
-  it()
+  it('should have GitHub and LinkedIn links', () => {
+    const gitHub = screen.getByRole('link', {name: 'GitHub_L'});
+    const linkedIn = screen.getByRole('link', {name: 'LinkedIn_L'});
+    expect(gitHub).toBeDefined();
+    expect(linkedIn).toBeDefined();
+  });
 });
