@@ -1,28 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import NavBar from '../components/NavBar';
 import ProfilePicture from '../images/Linkedin.jpg';
 import './style.css'
 
 export default function MainPage() {
   return (
     <div>
-      <nav>
-        <Link to="/" className='nav-button' data-testid="Home_b">
-          Home
-        </Link>
-        <Link to="/about" className='nav-button' data-testid="About_b">
-          About
-        </Link>
-        <Link to="/projects" className='nav-button' data-testid="Projects_b">
-          My Projects
-        </Link>
-        <Link to="/skills" className='nav-button' data-testid="Skills_b">
-          Skills
-        </Link>
-        <Link to="/contact" className='nav-button' data-testid="Contact_b">
-          Contact
-        </Link>
-      </nav>
+      <NavBar />
       <h1 id="title">Arthur Teixeira Santos</h1>
       <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' data-testid="profile_pic" />
       <p id='description'>
