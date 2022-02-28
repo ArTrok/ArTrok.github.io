@@ -42,7 +42,7 @@ describe('Main Page', () => {
 
   it('should have "watermark" at the end of the page', () => {
     renderWithRouter('/');
-    const madeByMeSeal = screen.getByTestId('brief_description');
+    const madeByMeSeal = screen.getByTestId('made_by');
     const madeByMeSealImg = screen.getByRole('img', { name: 'madeByMeSeal' });
     expect(madeByMeSeal).toBeDefined();
     expect(madeByMeSealImg).toBeDefined();

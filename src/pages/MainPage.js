@@ -4,6 +4,7 @@ import ProfilePicture from '../images/Linkedin.jpg';
 import GitHubIcon from '../images/github-original.svg'
 import LinkedInIcon from '../images/linkedin-plain.svg'
 import './style.css'
+import MadeByMeSeal from '../components/MadeByMeSeal';
 
 export default function MainPage() {
   return (
@@ -27,6 +28,7 @@ export default function MainPage() {
         </div>
         <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' data-testid="profile_pic" />
       </div>
+      <MadeByMeSeal />
     </div>
   )
 }
