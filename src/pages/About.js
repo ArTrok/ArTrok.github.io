@@ -1,9 +1,12 @@
 import React from 'react';
+import MadeByMeSeal from '../components/MadeByMeSeal';
+import NavBar from '../components/NavBar';
 
 const About = () => {
   return (
     <>
-     <div>
+    <NavBar />
+    <div className='main_content_container'>
       <p id='description'>
         Born in <em>Sao Paulo City, Brazil,</em> Arthur is a person with a lot of determination
         and is trying to be the change in the world doing what he can with his knowledge
@@ -12,7 +15,8 @@ const About = () => {
         <strong>developer</strong> after graduting in chemical engineering and not finding a job that would
         make him feel fulfilled.
       </p> 
-     </div> 
+    </div>
+    <MadeByMeSeal />
     </>
   );
 };
