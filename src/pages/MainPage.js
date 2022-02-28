@@ -1,27 +1,28 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import ProfilePicture from '../images/Linkedin.jpg';
+import GitHubIcon from '../images/github-original.svg'
+import LinkedInIcon from '../images/linkedin-plain.svg'
 import './style.css'
 
 export default function MainPage() {
   return (
     <div>
       <NavBar />
-      <h1 id="title">Arthur Teixeira Santos</h1>
+      <div className='text_content_container'>
+        <h1 id="title">Arthur Teixeira Santos</h1>
+        <p id='description' data-testid="brief_description">
+          Olá, meu nome é Arthur e estou buscando ser reconhecido como desenvolvedor
+          através de minhas ações. Na jornada para a realização de um sonho.
+        </p>
+        <a href='https://github.com/ArTrok' aria-label='GitHub_L'>
+          <img src={ GitHubIcon } alt="GitHub_Icon" />
+        </a>
+        <a href='https://www.linkedin.com/in/arthur-teixeira-santos/' aria-label='LinkedIn_L'>
+          <img src={ LinkedInIcon } alt="LinkedIn_Icon" />
+        </a>
+      </div>
       <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' data-testid="profile_pic" />
-      <p id='description'>
-        Looking to get recognized as a developer throughout my actions.
-      </p>
-      <h3 id="up"><a href="#down">Soft Skills:</a></h3>
-      <h3>This is not a blog but I like it very much: <a href="https://mises.org/" rel='noreferrer' target="_blank">Mises Institute</a></h3>
-      <ul>
-        <li>Emotional Intelligence</li>
-        <li>Discipline</li>
-        <li><strong>Empathetic</strong></li>
-        <li>Fast Learner</li>
-        <li>Entrepreneur Mindset</li>
-        <li id="down"><a href="#up">Honesty</a></li>
-      </ul>
     </div>
   )
 }

@@ -5,7 +5,6 @@ const NAV_BUTTONS = ['Home_b', 'About_b', 'Projects_b', 'Skills_b', 'Contact_b']
 
 describe('Main Page', () => {
   // beforeEach(() => {
-  //   const { history } = renderWithRouter(<App />);
   // });
   it('should have nav buttons', () => {
     renderWithRouter('/');
@@ -16,16 +15,19 @@ describe('Main Page', () => {
   });
 
   it('should have a profile picture', () => {
+    renderWithRouter('/');
     const profilePic = screen.getByTestId('profile_pic');
     expect(profilePic).toBeDefined();
   });
 
   it('should have my name on it', () => {
+    renderWithRouter('/');
     const myName = screen.getByRole('heading', { level: 1 });
     expect(myName).toBeDefined();
   });
 
   it('should have GitHub and LinkedIn links', () => {
+    renderWithRouter('/');
     const gitHub = screen.getByRole('link', { name: 'GitHub_L' });
     const linkedIn = screen.getByRole('link', { name: 'LinkedIn_L' });
     expect(gitHub).toBeDefined();
@@ -33,11 +35,13 @@ describe('Main Page', () => {
   });
 
   it('should have brief description', () => {
+    renderWithRouter('/');
     const briefDescription = screen.getByTestId('brief_description');
     expect(briefDescription).toBeDefined();
   });
 
   it('should have "watermark" at the end of the page', () => {
+    renderWithRouter('/');
     const madeByMeSeal = screen.getByTestId('brief_description');
     const madeByMeSealImg = screen.getByRole('img', { name: 'madeByMeSeal' });
     expect(madeByMeSeal).toBeDefined();
@@ -45,6 +49,7 @@ describe('Main Page', () => {
   });
 
   it('should have an emote on top left side representing the page', () => {
+    renderWithRouter('/');
     const pageEmote = screen.getByRole('img', { name: 'pageEmote' });
     expect(pageEmote).toBeDefined();
   });
