@@ -21,14 +21,31 @@ describe('Main Page', () => {
   });
 
   it('should have my name on it', () => {
-    const myName = screen.getByRole('heading', {level: 1});
+    const myName = screen.getByRole('heading', { level: 1 });
     expect(myName).toBeDefined();
   });
 
   it('should have GitHub and LinkedIn links', () => {
-    const gitHub = screen.getByRole('link', {name: 'GitHub_L'});
-    const linkedIn = screen.getByRole('link', {name: 'LinkedIn_L'});
+    const gitHub = screen.getByRole('link', { name: 'GitHub_L' });
+    const linkedIn = screen.getByRole('link', { name: 'LinkedIn_L' });
     expect(gitHub).toBeDefined();
     expect(linkedIn).toBeDefined();
+  });
+
+  it('should have brief description', () => {
+    const briefDescription = screen.getByTestId('brief_description');
+    expect(briefDescription).toBeDefined();
+  });
+
+  it('should have "watermark" at the end of the page', () => {
+    const madeByMeSeal = screen.getByTestId('brief_description');
+    const madeByMeSealImg = screen.getByRole('img', { name: 'madeByMeSeal' });
+    expect(madeByMeSeal).toBeDefined();
+    expect(madeByMeSealImg).toBeDefined();
+  });
+
+  it('should have an emote on top left side representing the page', () => {
+    const pageEmote = screen.getByRole('img', { name: 'pageEmote' });
+    expect(pageEmote).toBeDefined();
   });
 });
