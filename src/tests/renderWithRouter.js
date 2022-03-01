@@ -8,10 +8,8 @@ import App from '../App';
 // import Skills from '../pages/Skills';
 // import Contact from '../pages/Contact';
 
-
-const renderWithRouter = (path) => {
+const renderWithRouter = () => {
   const history = createMemoryHistory();
-  history.push(path);
   return ({
     ...render(<Router history={ history }><App /></Router>), history,
   });

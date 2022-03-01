@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 
 const NAV_BUTTONS = ['Home_b', 'About_b', 'Projects_b', 'Skills_b', 'Contact_b'];
 
-describe('Main Page', () => {
+describe('About Page', () => {
   
   it('should have nav buttons', () => {
     renderWithRouter();
