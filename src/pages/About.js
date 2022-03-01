@@ -2,7 +2,7 @@ import React from 'react';
 import MadeByMeSeal from '../components/MadeByMeSeal';
 import NavBar from '../components/NavBar';
 import FunPic from '../images/meDoingPullUps.gif';
-import OldPic from '../images/beforeAndAfter.jpg';
+import OldPic from '../images/before.png';
 import RecentPic from '../images/nowCropped.jpg';
 
 const About = () => {
