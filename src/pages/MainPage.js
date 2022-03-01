@@ -8,7 +8,7 @@ import MadeByMeSeal from '../components/MadeByMeSeal';
 
 export default function MainPage() {
   return (
-    <div>
+    <>
       <NavBar />
       <div className='main_content_container flex'>
         <div className='text_content_container'>
@@ -29,6 +29,6 @@ export default function MainPage() {
         <img src={ ProfilePicture } alt="Arthur T. Santos's face" width="300px" id='profile-pic' data-testid="profile_pic" />
       </div>
       <MadeByMeSeal />
-    </div>
+    </>
   )
 }
