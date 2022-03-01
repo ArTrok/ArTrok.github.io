@@ -1,7 +1,18 @@
-import React from 'react';
+import React from 'react'
+import Carousel from '../components/Carousel'
+import MadeByMeSeal from '../components/MadeByMeSeal'
+import NavBar from '../components/NavBar'
 
 const Projects = () => {
-  return <div>PROJECTS PAGE</div>;
-};
+  return (
+    <>
+      <NavBar />
+      <div className='main_content_container'>
+      <Carousel />
+      </div>
+      <MadeByMeSeal />
+    </>
+  )
+}
 
-export default Projects;
+export default Projects

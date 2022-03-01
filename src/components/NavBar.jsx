@@ -38,16 +38,16 @@ const NavBar = () => {
         Home
       </Link>
       <Link to="/about" className='nav-button' data-testid="About_b">
-        About
+        Sobre
       </Link>
       <Link to="/projects" className='nav-button' data-testid="Projects_b">
-        My Projects
+        Meus Projetos
       </Link>
       <Link to="/skills" className='nav-button' data-testid="Skills_b">
-        Skills
+        Habilidades
       </Link>
       <Link to="/contact" className='nav-button' data-testid="Contact_b">
-        Contact
+        Contato
       </Link>
   </nav>
   )

@@ -41,16 +41,32 @@ describe('Projects Page', () => {
   it('should have left arrow', () => {
     renderWithRouter();
     userEvent.click(screen.getByTestId('Projects_b'));
+    const leftArrow = screen.getByAltText('leftArrow');
+    expect(leftArrow).toBeDefined();
 
   });
   it('should have right arrow', () => {
     renderWithRouter();
     userEvent.click(screen.getByTestId('Projects_b'));
+    const rightArrow = screen.getByAltText('rightArrow');
+    expect(rightArrow).toBeDefined();
 
   });
   it('should have projects links, 3 in total', () => {
     renderWithRouter();
     userEvent.click(screen.getByTestId('Projects_b'));
+    const rightArrow = screen.getByAltText('rightArrow');
+
+    const project1 = screen.getByAltText('Project1');
+    expect(project1).toBeDefined();
+    userEvent.click(rightArrow);
+
+    const project2 = screen.getByAltText('Project2');
+    expect(project2).toBeDefined();
+    userEvent.click(rightArrow);
+
+    const project3 = screen.getByAltText('Project3');
+    expect(project3).toBeDefined();
 
   });
 });
