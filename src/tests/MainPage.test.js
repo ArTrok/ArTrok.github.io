@@ -4,8 +4,6 @@ import renderWithRouter from './renderWithRouter';
 const NAV_BUTTONS = ['Home_b', 'About_b', 'Projects_b', 'Skills_b', 'Contact_b'];
 
 describe('Main Page', () => {
-  // beforeEach(() => {
-  // });
   it('should have nav buttons', () => {
     renderWithRouter('/');
     for (const texts of NAV_BUTTONS) {
