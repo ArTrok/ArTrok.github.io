@@ -17,11 +17,11 @@ export default function MainPage() {
             Olá, meu nome é Arthur e estou buscando ser reconhecido como desenvolvedor
             através de minhas ações. Na jornada para a realização de um sonho.
           </p>
-          <a href='https://github.com/ArTrok' aria-label='GitHub_L'>
+          <a href='https://github.com/ArTrok' aria-label='GitHub_L' className='flex'>
             Conheça o meu GitHub
             <img src={ GitHubIcon } alt="GitHub_Icon" className="w-24" />
           </a>
-          <a href='https://www.linkedin.com/in/arthur-teixeira-santos/' aria-label='LinkedIn_L'>
+          <a href='https://www.linkedin.com/in/arthur-teixeira-santos/' aria-label='LinkedIn_L' className='flex'>
             Conheça o meu LinkedIn
             <img src={ LinkedInIcon } alt="LinkedIn_Icon" className="w-24" />
           </a>
