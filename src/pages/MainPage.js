@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import ProfilePicture from '../images/Linkedin.jpg';
-import GitHubIcon from '../images/github-original.svg'
-import LinkedInIcon from '../images/linkedin-plain.svg'
+import GitHubIcon from '../images/github-original.svg';
+import LinkedInIcon from '../images/linkedin-plain.svg';
 import './style.css'
 import MadeByMeSeal from '../components/MadeByMeSeal';
 
