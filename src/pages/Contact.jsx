@@ -6,7 +6,7 @@ import LinkedInIcon from '../images/linkedin-plain.svg';
 
 const Contact = () => {
   return (
-    <>
+    <div className='h-screen bg-planets'>
     <NavBar />
     <div className='main_content_container'>
       <h2 data-testid="ContactMe">Entre em Contato</h2>
@@ -27,7 +27,7 @@ const Contact = () => {
           </a>
     </div>
     <MadeByMeSeal />
-  </>
+  </div>
   )
 }
 

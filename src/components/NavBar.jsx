@@ -32,21 +32,21 @@ const NavBar = () => {
     }
   }, [location.pathname])
   return (
-    <nav className="flex" >
+    <nav className="grid grid-cols-6 text-center w-11/12 text-cream bg-light-blue" >
       <img alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
-      <Link to="/" className='nav-button' data-testid="Home_b">
+      <Link to="/" className='nav-button bg-dark-blue' data-testid="Home_b">
         Home
       </Link>
-      <Link to="/about" className='nav-button' data-testid="About_b">
+      <Link to="/about" className='nav-button bg-dark-blue' data-testid="About_b">
         Sobre
       </Link>
-      <Link to="/projects" className='nav-button' data-testid="Projects_b">
+      <Link to="/projects" className='nav-button bg-dark-blue' data-testid="Projects_b">
         Meus Projetos
       </Link>
-      <Link to="/skills" className='nav-button' data-testid="Skills_b">
+      <Link to="/skills" className='nav-button bg-dark-blue' data-testid="Skills_b">
         Habilidades
       </Link>
-      <Link to="/contact" className='nav-button' data-testid="Contact_b">
+      <Link to="/contact" className='nav-button bg-dark-blue' data-testid="Contact_b">
         Contato
       </Link>
   </nav>

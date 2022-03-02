@@ -32,7 +32,7 @@ const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' },
 
 const Skills = () => {
   return (
-    <>
+    <div className="h-screen bg-planets">
     <NavBar />
     <div className='main_content_container'>
       <div className="hard_skills_container grid grid-rows-3 grid-cols-6">
@@ -58,7 +58,7 @@ const Skills = () => {
       </div>
     </div>
     <MadeByMeSeal />
-  </>
+  </div>
   )
 }
 
