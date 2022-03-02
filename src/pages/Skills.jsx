@@ -19,9 +19,9 @@ import LearnToLearn from '../images/skills_icons/learn.png';
 import Colab from '../images/skills_icons/colab.png';
 import Emotional from '../images/skills_icons/emotional.png';
 import Communication from '../images/skills_icons/communication.png';
-// import './Skills.css';
 import SoftSkils from '../components/SoftSkils';
 import HardSkills from '../components/HardSkills';
+import { motion } from 'framer-motion';
 
 const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
  { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},
@@ -36,10 +36,10 @@ const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' },
 const Skills = () => {
   return (
     <div className="bg-planets">
-    <div className="bg-deep-purple bg-opacity-75">
+    <div className="bg-deep-purple bg-opacity-50">
 
     <NavBar />
-    <div className='main_content_container'>
+    <div className='main_content_container w-11/12'>
       <HardSkills icons={ icons } />
       <SoftSkils iconsSoft={ iconsSoft }/>
     </div>

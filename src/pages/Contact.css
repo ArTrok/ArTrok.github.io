@@ -1,0 +1,4 @@
+.main_content_container {
+  margin-left: 50%;
+  transform: translateX(-50%);
+};
