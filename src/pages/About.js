@@ -8,8 +8,10 @@ import RecentPic from '../images/nowCropped.jpg';
 const About = () => {
   return (
     <div className="bg-planets">
+    <div className="bg-deep-purple bg-opacity-75">
+
     <NavBar />
-    <div className='main_content_container'>
+    <div className='main_content_container text-dark-blue bg-light-blue'>
       <div>
         <p id='description' data-testid="brief_description1" className=''>
           Born in <em>Sao Paulo City, Brazil,</em> Arthur is a person with a lot of determination
@@ -45,6 +47,7 @@ const About = () => {
       </div>
     </div>
     <MadeByMeSeal />
+    </div>
     </div>
   );
 };

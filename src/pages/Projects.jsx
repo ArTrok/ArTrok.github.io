@@ -6,11 +6,13 @@ import NavBar from '../components/NavBar'
 const Projects = () => {
   return (
     <div className="bg-planets">
+    <div className="bg-deep-purple bg-opacity-75">
       <NavBar />
       <div className='main_content_container'>
       <Carousel />
       </div>
       <MadeByMeSeal />
+    </div>
     </div>
   )
 }
