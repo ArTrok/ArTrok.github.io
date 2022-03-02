@@ -32,14 +32,16 @@ const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' },
 
 const Skills = () => {
   return (
-    <>
+    <div className="h-screen bg-planets">
+    <div className="bg-deep-purple bg-opacity-75">
+
     <NavBar />
     <div className='main_content_container'>
       <div className="hard_skills_container grid grid-rows-3 grid-cols-6">
-        <h2>Hard Skills</h2>
+        <h2 className='bg-dark-blue text-cream'>Hard Skills</h2>
         {icons.map((icon, index) => {
           return (
-          <div key={index} className="icon_container">
+            <div key={index} className="icon_container text-dark-blue bg-light-blue">
             <img src={icon.link} alt={icon.alt} />
             <p>{icon.name}</p>
           </div>)
@@ -47,10 +49,10 @@ const Skills = () => {
 
       </div>
       <div className="soft_skills_container grid grid-rows-2 grid-cols-6">
-        <h2>Soft Skills</h2>
+        <h2 className='bg-dark-blue text-cream'>Soft Skills</h2>
         {iconsSoft.map((icon, index) => {
           return (
-          <div key={index} className="icon_container">
+            <div key={index} className="icon_container text-dark-blue bg-light-blue">
             <img src={icon.link} alt={icon.text} />
             <p>{icon.text}</p>
           </div>)
@@ -58,7 +60,8 @@ const Skills = () => {
       </div>
     </div>
     <MadeByMeSeal />
-  </>
+  </div>
+  </div>
   )
 }
 

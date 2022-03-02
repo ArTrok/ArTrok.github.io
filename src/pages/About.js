@@ -7,11 +7,13 @@ import RecentPic from '../images/nowCropped.jpg';
 
 const About = () => {
   return (
-    <>
+    <div className="bg-planets">
+    <div className="bg-deep-purple bg-opacity-75">
+
     <NavBar />
-    <div className='main_content_container'>
+    <div className='main_content_container text-dark-blue bg-light-blue'>
       <div>
-        <p id='description' data-testid="brief_description1" >
+        <p id='description' data-testid="brief_description1" className=''>
           Born in <em>Sao Paulo City, Brazil,</em> Arthur is a person with a lot of determination
           and is trying to be the change in the world doing what he can with his knowledge
           and physical capabilities. Always updating himself with information from cutting
@@ -45,7 +47,8 @@ const About = () => {
       </div>
     </div>
     <MadeByMeSeal />
-    </>
+    </div>
+    </div>
   );
 };
 
