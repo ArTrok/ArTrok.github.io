@@ -19,6 +19,9 @@ import LearnToLearn from '../images/skills_icons/learn.png';
 import Colab from '../images/skills_icons/colab.png';
 import Emotional from '../images/skills_icons/emotional.png';
 import Communication from '../images/skills_icons/communication.png';
+// import './Skills.css';
+import SoftSkils from '../components/SoftSkils';
+import HardSkills from '../components/HardSkills';
 
 const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
  { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},
@@ -32,32 +35,13 @@ const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' },
 
 const Skills = () => {
   return (
-    <div className="h-screen bg-planets">
+    <div className="bg-planets">
     <div className="bg-deep-purple bg-opacity-75">
 
     <NavBar />
     <div className='main_content_container'>
-      <div className="hard_skills_container grid grid-rows-3 grid-cols-6">
-        <h2 className='bg-dark-blue text-cream'>Hard Skills</h2>
-        {icons.map((icon, index) => {
-          return (
-            <div key={index} className="icon_container text-dark-blue bg-light-blue">
-            <img src={icon.link} alt={icon.alt} />
-            <p>{icon.name}</p>
-          </div>)
-        })}
-
-      </div>
-      <div className="soft_skills_container grid grid-rows-2 grid-cols-6">
-        <h2 className='bg-dark-blue text-cream'>Soft Skills</h2>
-        {iconsSoft.map((icon, index) => {
-          return (
-            <div key={index} className="icon_container text-dark-blue bg-light-blue">
-            <img src={icon.link} alt={icon.text} />
-            <p>{icon.text}</p>
-          </div>)
-        })}
-      </div>
+      <HardSkills icons={ icons } />
+      <SoftSkils iconsSoft={ iconsSoft }/>
     </div>
     <MadeByMeSeal />
   </div>
