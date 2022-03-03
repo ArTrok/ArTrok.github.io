@@ -16,11 +16,9 @@ const HardSkills = ({icons}) => {
 
   const skillVariantMain = {
     hidden: {
-      y: -50,
       opacity: 0,
     },
     visible: {
-      y: 0,
       opacity: 1,
       transition: {
         delay: 0.3,
@@ -30,7 +28,7 @@ const HardSkills = ({icons}) => {
   };
 
   return (
-    <motion.div variants={skillVariantMain} animate="visible" initial="hidden" className='hard_skills_container grid'>
+    <motion.div variants={skillVariantMain} animate="visible" initial="hidden" className='hard_skills_container'>
         <h2 className='bg-dark-blue text-cream hard_skills_title font-bold text-3xl text-center rounded-xl w-full'>Hard Skills</h2>
     {icons.map((icon, index) => {
       return (

@@ -5,3 +5,10 @@
 @tailwind utilities;
 
 @import-normalize;
+
+.main_content_container {
+  min-width: 375px;
+}
+
+@media screen and (min-width: 736px) {
+}

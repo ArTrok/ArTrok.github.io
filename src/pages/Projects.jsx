@@ -9,9 +9,10 @@ const Projects = () => {
     <div className="bg-planets">
     <div className="bg-deep-purple bg-opacity-50">
       <NavBar />
-      <motion.div animate={{opacity: 1}} initial={{opacity: 0}} transition={{ duration: 0.4 }} className='main_content_container'>
+      <motion.div animate={{opacity: 1}} initial={{opacity: 0}} transition={{ duration: 0.4 }} className='main_content_container3'>
       <Carousel />
       </motion.div>
+      <h1 className='proj_title text-cream bg-deep-purple'>Recipes App</h1>
       <MadeByMeSeal />
     </div>
     </div>

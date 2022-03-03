@@ -16,11 +16,10 @@ const SoftSkils = ({iconsSoft}) => {
 
   const skillVariantMain = {
     hidden: {
-      y: -50,
       opacity: 0,
     },
     visible: {
-      y: 0,
+      
       opacity: 1,
       transition: {
         delay: 0.4,
@@ -29,7 +28,7 @@ const SoftSkils = ({iconsSoft}) => {
     }
   };
   return (
-    <motion.div variants={skillVariantMain} animate="visible" initial="hidden" className="soft_skills_container grid">
+    <motion.div variants={skillVariantMain} animate="visible" initial="hidden" className="soft_skills_container">
     <h2 className='bg-dark-blue text-cream soft_skills_title text-center text-3xl font-bold  w-full rounded-xl'>Soft Skills</h2>
     {iconsSoft.map((icon, index) => {
       return (

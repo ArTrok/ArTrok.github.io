@@ -1,4 +1,56 @@
-.main_content_container {
-  margin-left: 50%;
-  transform: translateX(-50%);
+.main_content_container5 {
+  margin-top: 15%;
 };
+
+#message {
+  width: 300px;
+};
+
+.name {
+  height: 40px;
+  width: 250px;
+}
+
+#email {
+  width: 300px;
+}
+
+.link_button {
+  width: 120px;
+  font-weight: bold;
+  justify-content: space-evenly;
+}
+
+.link_button img {
+  height: 30px;
+}
+
+@media screen and (min-width: 736px) {
+  #email {
+    margin-top: -30px;
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .messagearea {
+    width: 500px;
+    margin-top: -30px;
+    height: 100px;
+    font-size: 16px;
+  };
+  .name {
+    width: 250px;
+    height: 40px;
+    font-size: 50px;
+  }
+  .main_content_container5 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    height: 600px;
+    width:fit-content;
+  };
+  .link_button img {
+    height: 50px;
+  } 
+}

@@ -1,14 +1,26 @@
 .hard_skills_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1/2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-  'hard_skills_title hard_skills_title hard_skills_title hard_skills_title hard_skills_title hard_skills_title'
-  "icon_container0h icon_container1h icon_container2h icon_container3h icon_container4h icon_container5h"
-  "icon_container6h icon_container7h icon_container8h icon_container9h icon_container10h icon_container11h";
+  'hard_skills_title hard_skills_title'
+  "icon_container0h icon_container1h" "icon_container2h icon_container3h" "icon_container4h icon_container5h"
+  "icon_container6h icon_container7h" "icon_container8h icon_container9h" "icon_container10h icon_container11h";
   gap: 5%;
   justify-items: center;
   margin-top: 10%;
-  margin-left: 10%;
+  /* 
+  margin-left: 10px;
   margin-right: 10%;
-  margin-bottom: 0%;
+  margin-bottom: 0%; */
+}
+
+.main_content_container4 {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  height: auto;
 }
 
 .hard_skills_title {
@@ -64,4 +76,21 @@
 
 .skill_name {
   text-align: center;
+}
+
+@media screen and (min-width: 796px) {
+  .hard_skills_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/2fr 1fr 1fr;
+    grid-template-areas: 
+    'hard_skills_title hard_skills_title hard_skills_title hard_skills_title hard_skills_title hard_skills_title'
+    "icon_container0h icon_container1h icon_container2h icon_container3h icon_container4h icon_container5h"
+    "icon_container6h icon_container7h icon_container8h icon_container9h icon_container10h icon_container11h";
+    gap: 5%;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0%;
+}
 }

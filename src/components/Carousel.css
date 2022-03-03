@@ -1,0 +1,47 @@
+.carousel {
+  margin-top: 5%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-areas:
+    'arrowL image image image image image arrowR'
+  ;
+}
+
+.main_content_container3 {
+
+}
+
+.arrowL {
+  grid-area: arrowL;
+  width: fit-content;
+}
+
+.arrowR {
+  grid-area: arrowR;
+  width: fit-content;
+
+}
+
+.arrImg1 {
+  width: 45px;
+}
+
+.arrImg2 {
+  width: 45px;
+}
+
+.image_container {
+  grid-area: image;
+}
+
+.proj_title {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 736px) {
+  .proj_title {
+    font-size: 28px;
+  }
+}

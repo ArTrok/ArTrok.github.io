@@ -1,19 +1,86 @@
-/* .text_content_container {
-  width: fit-content
-};
+#profile-pic {
+  grid-area: profile;
+  width: 140px;
+  margin-top: 0.75rem;
+}
 
-.name {
-  width: fit-content;
-};
+#iconLink1 {
+  margin-inline: 10px;
+  grid-area: link1;
+}
+#iconLink2 {
+  margin-inline: 10px;
+  grid-area: link2;
+}
+.iconLink {
+  font-size: 1.25rem/* 20px */;
+  width: 3rem;
+}
 
-.link1 {
-  width: fit-content;
-};
+.linkContainer {
+  width: 300px;
+  height: 50px;
+}
 
-.link2 {
-  width: fit-content;
-};
+#title {
+  grid-area: name;
+  margin-inline: 20px;
+}
 
-.picture {
-  width: 200px;
-}; */
+#description {
+  grid-area: desc;
+  margin-inline: 10px;
+}
+
+.main_content_container {
+  display: grid;
+  gap: 5px;
+  grid-template-areas: 
+    'name name name name name'
+    'name name name name name'
+    'desc profile profile profile profile'
+    'desc profile profile profile profile'
+    'desc profile profile profile profile'
+    'desc profile profile profile profile'
+    'link1 link1 link1 . .'
+    'link2 link2 link2 . .'
+  ;
+}
+
+@media screen and (min-width: 736px) {
+  #title {
+    font-size: 3.75rem;
+    height: 100px;
+  }
+  .iconLink {
+    width: 6rem;
+    height: 60px;
+  }
+  #profile-pic {
+    width: fit-content;
+    height: 700px;
+    justify-self: center;
+  }
+  .description {
+    font-size: 28px;
+  }
+  .linkContainer {
+    width: 400px;
+    height: 65px;
+    font-size: 20px;
+    justify-self: center;
+  }
+
+  .main_content_container {
+    display: grid;
+    gap: 5px;
+    width: fit-content;
+    grid-template-areas:
+      '. name name .'
+      '. desc desc .'
+      '. desc desc .'
+      'profile profile profile profile'
+      'link1 link1 link2 link2'
+    ;
+  }
+}

@@ -38,7 +38,7 @@ const Skills = () => {
     <div className="bg-deep-purple bg-opacity-50">
 
     <NavBar />
-    <div className='main_content_container w-11/12'>
+    <div className='main_content_container4'>
       <HardSkills icons={ icons } />
       <SoftSkils iconsSoft={ iconsSoft }/>
     </div>

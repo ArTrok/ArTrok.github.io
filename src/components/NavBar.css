@@ -1,0 +1,52 @@
+nav {
+  font-size: 100%;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  gap: 5px;
+  grid-template-areas: 
+    'nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 . nav-button0'
+    'nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 . nav-button0'
+    'nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 . nav-button0'
+    'nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 . nav-button0'
+    'nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 . nav-button0'
+    ;
+}
+
+.nav-button0 {
+  grid-area: nav-button0;
+  justify-self: center;
+}
+
+.nav-button1 {
+  grid-area: nav-button1;
+  border-radius: 5%;
+}
+
+.nav-button2 {
+  grid-area: nav-button2;
+}
+
+.nav-button3 {
+  grid-area: nav-button3;
+}
+
+.nav-button4 {
+  grid-area: nav-button4;
+}
+
+.nav-button5 {
+  grid-area: nav-button5;
+}
+
+@media screen and (min-width: 736px) {
+  nav {
+    font-size: 36px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+      'nav-button0 . nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
+      '. . nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
+      ;
+  }
+}
