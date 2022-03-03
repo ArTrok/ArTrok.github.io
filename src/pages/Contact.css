@@ -25,6 +25,10 @@
   height: 30px;
 }
 
+.send {
+  height: 40px;
+}
+
 @media screen and (min-width: 736px) {
   #email {
     margin-top: -30px;
@@ -32,7 +36,7 @@
     height: 40px;
     font-size: 16px;
   }
-  .messagearea {
+  #message {
     width: 500px;
     margin-top: -30px;
     height: 100px;
@@ -52,5 +56,9 @@
   };
   .link_button img {
     height: 50px;
-  } 
+  }
+  .send {
+    height: 50px;
+    font-size: 20px;
+  }
 }
