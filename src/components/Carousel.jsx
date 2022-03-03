@@ -32,7 +32,7 @@ const Carousel = () => {
       <motion.button whileHover={{scale: 1.1}} onClick={ previousProj } className="w-20 bg-opacity-50 bg-cream">
         <img src={ leftArrow } alt="leftArrow" className="w-20"/>
       </motion.button>
-      <a href={arrOfProjects[current].link} className='images_container w-11/12 justify-evenly p-5 flex bg-opacity-50 bg-cream'>
+      <a href={arrOfProjects[current].link} target="_blank" rel='noreferrer' className='images_container w-11/12 justify-evenly p-5 flex bg-opacity-50 bg-cream'>
         <img src={arrOfProjects[current].project} alt={arrOfProjects[current].alt} className="rounded-md" />
       </a>
       <motion.button whileHover={{scale: 1.1}} onClick={ nextProj } className="w-20 bg-opacity-50 bg-cream">

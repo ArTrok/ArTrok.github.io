@@ -21,7 +21,6 @@ import Emotional from '../images/skills_icons/emotional.png';
 import Communication from '../images/skills_icons/communication.png';
 import SoftSkils from '../components/SoftSkils';
 import HardSkills from '../components/HardSkills';
-import { motion } from 'framer-motion';
 
 const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
  { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},

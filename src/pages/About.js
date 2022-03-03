@@ -22,10 +22,10 @@ const About = () => {
           <strong>developer</strong> after graduting in chemical engineering and not finding a job that would
           make him feel fulfilled.
         </motion.p>
-        <img src={ FunPic } alt='Me doing pull ups' className=' rounded-md h-picsize' data-testid="first_pic" />
+        <motion.img whileHover={{scale: 1.1, rotate: 4}} whileTap={{scale: 0.9, rotate: -4}} animate={{opacity: 1}} initial={{opacity: 0.1}} src={ FunPic } alt='Me doing pull ups' className=' rounded-md h-picsize' data-testid="first_pic" />
       </div>
       <div className='flex my-5 p-5'>
-        <img src={ OldPic } alt='before and after of myself' className=' h-picsize rounded-md' data-testid="second_pic" />
+        <motion.img whileHover={{scale: 1.1, rotate: -4}} whileTap={{scale: 0.9, rotate: 4}} animate={{opacity: 1}} initial={{opacity: 0.5}} src={ OldPic } alt='before and after of myself' className=' h-picsize rounded-md' data-testid="second_pic" />
         <motion.p whileInView={{scale: 1.2}} transition={{duration: 1}} id='description' className='bg-light-blue self-center p-5 ml-56 rounded-md' data-testid="brief_description2" >
           Born in <em>Sao Paulo City, Brazil,</em> Arthur is a person with a lot of determination
           and is trying to be the change in the world doing what he can with his knowledge
@@ -44,7 +44,7 @@ const About = () => {
           <strong>developer</strong> after graduting in chemical engineering and not finding a job that would
           make him feel fulfilled.
         </motion.p>
-        <img src={ RecentPic } alt='me smiling in front of a computer' className=' h-picsize2 rounded-md' data-testid="third_pic" />
+        <motion.img whileHover={{scale: 1.1, rotate: 4}} whileTap={{scale: 0.9, rotate: -4}} animate={{opacity: 1}} initial={{opacity: 0.5}} src={ RecentPic } alt='me smiling in front of a computer' className=' h-picsize2 rounded-md' data-testid="third_pic" />
       </div>
     </div>
     <MadeByMeSeal />
