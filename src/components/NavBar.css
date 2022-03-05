@@ -1,19 +1,38 @@
-nav {
+.navBar {
+  display: flex;
+  justify-content:space-between;
+}
+
+.navLinks {
   font-size: 20px;
   text-align: center;
   align-items: center;
-  display: grid;
+  display: none;
   gap: 5px;
   grid-template-areas: 
-    'nav-button1 nav-button1 nav-button0 nav-button0'
-    'nav-button2 nav-button2 nav-button0 nav-button0'
-    'nav-button3 nav-button3 nav-button0 nav-button0'
-    'nav-button4 nav-button4 nav-button0 nav-button0'
-    'nav-button5 nav-button5 nav-button0 nav-button0'
+    'nav-button1'
+    'nav-button2'
+    'nav-button3'
+    'nav-button4'
+    'nav-button5'
     ;
 }
 
+.navLinks.show {
+  display: grid;
+}
+
+.menuIcon {
+  display: block;
+}
+
 .nav-button0 {
+  grid-area: nav-button0;
+  justify-self: center;
+  height: 60px;
+}
+
+.nav-button0.show {
   grid-area: nav-button0;
   justify-self: center;
   height: 160px;
@@ -45,17 +64,39 @@ nav {
   width: 120px;
 }
 
+.menuIcon {
+  grid-area: menuIcon;
+}
+
 @media screen and (min-width: 736px) {
-  nav {
+  .navLinks {
     font-size: 20px;
     text-align: center;
+    align-self: center;
+    grid-area: navLinks;
     display: grid;
-    gap: 1px;
+    gap: 10px;
     grid-template-areas: 
-      'nav-button0 . nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
-      '. . nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
+      'nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
       ;
   }
+
+  .navBar {
+    display: grid;
+    grid-template-areas: 
+      'nav-button0 navLinks navLinks navLinks';
+  }
+
+  .nav-button0 {
+    justify-self: center;
+    height: 130px;
+  }
+
+
+  .menuIcon {
+    display: none;
+  }
+
   nav div{
     height: 40px;
     padding-top: 5px;
