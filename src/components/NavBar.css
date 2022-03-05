@@ -5,17 +5,18 @@ nav {
   display: grid;
   gap: 5px;
   grid-template-areas: 
-    'nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 nav-button1 . nav-button0'
-    'nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 nav-button2 . nav-button0'
-    'nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 nav-button3 . nav-button0'
-    'nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 nav-button4 . nav-button0'
-    'nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 nav-button5 . nav-button0'
+    'nav-button1 nav-button1 nav-button0 nav-button0'
+    'nav-button2 nav-button2 nav-button0 nav-button0'
+    'nav-button3 nav-button3 nav-button0 nav-button0'
+    'nav-button4 nav-button4 nav-button0 nav-button0'
+    'nav-button5 nav-button5 nav-button0 nav-button0'
     ;
 }
 
 .nav-button0 {
   grid-area: nav-button0;
   justify-self: center;
+  height: 160px;
 }
 
 .nav-button1 {

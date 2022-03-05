@@ -61,7 +61,7 @@ const NavBar = () => {
   };
 
   return (
-    <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="text-cream bg-light-blue" >
+    <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="text-cream bg-light-blue bg-opacity-75" >
       <motion.img className='nav-button0' whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 500}} whileTap={{ scale: 0.8, rotate: -3 }} alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
       <Link variants={skillVariant} animate="visible" initial="hidden" to="/" className='nav-button1' data-testid="Home_b">
       <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>

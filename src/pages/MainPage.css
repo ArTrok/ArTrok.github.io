@@ -25,6 +25,7 @@
 #title {
   grid-area: name;
   margin-inline: 20px;
+  font-size: 20px;
 }
 
 #description {
