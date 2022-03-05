@@ -21,22 +21,27 @@ nav {
 .nav-button1 {
   grid-area: nav-button1;
   border-radius: 5%;
+  width: 120px;
 }
 
 .nav-button2 {
   grid-area: nav-button2;
+  width: 120px;
 }
 
 .nav-button3 {
   grid-area: nav-button3;
+  width: 120px;
 }
 
 .nav-button4 {
   grid-area: nav-button4;
+  width: 120px;
 }
 
 .nav-button5 {
   grid-area: nav-button5;
+  width: 120px;
 }
 
 @media screen and (min-width: 736px) {
@@ -44,9 +49,14 @@ nav {
     font-size: 20px;
     text-align: center;
     display: grid;
+    gap: 1px;
     grid-template-areas: 
       'nav-button0 . nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
       '. . nav-button1 nav-button1 nav-button2 nav-button2 nav-button3 nav-button3 nav-button4 nav-button4 nav-button5 nav-button5 nav-button5'
       ;
+  }
+  nav div{
+    height: 40px;
+    padding-top: 5px;
   }
 }

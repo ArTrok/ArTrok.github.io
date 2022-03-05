@@ -51,6 +51,8 @@
   #title {
     font-size: 3rem;
     height: 100px;
+    width: 500px;
+    justify-self: center;
   }
   .iconLink {
     width: 6rem;

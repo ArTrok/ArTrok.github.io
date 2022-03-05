@@ -84,7 +84,7 @@ const NavBar = () => {
       </motion.div>
       </Link>
       <Link variants={skillVariant} animate="visible" initial="hidden" to="/contact" className='nav-button5' data-testid="Contact_b">
-      <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3, x: -50 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'just'}}>
+      <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
         Contato
       </motion.div>
       </Link>
