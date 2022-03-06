@@ -6,7 +6,7 @@
   width: 300px;
 };
 
-.name {
+#name {
   height: 40px;
   width: 250px;
 }
@@ -36,13 +36,13 @@
     height: 40px;
     font-size: 16px;
   }
-  #message {
+  .message {
     width: 500px;
     margin-top: -30px;
     height: 100px;
     font-size: 16px;
   };
-  .name {
+  #name {
     width: 250px;
     height: 40px;
     font-size: 50px;
@@ -50,9 +50,11 @@
   .main_content_container5 {
     margin-left: 50%;
     transform: translateX(-50%);
-    margin-top: 5%;
+    margin-top: 10%;
     height: 600px;
     width:fit-content;
+    padding-inline: 50px;
+    padding-block: 30px;
   };
   .link_button img {
     height: 50px;
