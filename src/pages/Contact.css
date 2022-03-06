@@ -3,9 +3,9 @@
   display: grid;
 };
 
-.message {
+/* .message {
   width: 350px;
-};
+}; */
 
 #name {
   height: 40px;
@@ -37,12 +37,12 @@
     height: 40px;
     font-size: 16px;
   }
-  .message {
+  /* .message {
     width: 500px;
     margin-top: -30px;
     height: 100px;
     font-size: 16px;
-  };
+  }; */
   #name {
     width: 250px;
     height: 40px;
