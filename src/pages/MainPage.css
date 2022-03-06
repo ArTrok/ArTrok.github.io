@@ -12,6 +12,12 @@
   margin-inline: 10px;
   grid-area: link2;
 }
+
+.mediaLinks {
+  grid-area: mediaLinks;
+  justify-self: center;
+}
+
 .iconLink {
   font-size: 1.25rem/* 20px */;
   width: 3rem;
@@ -43,17 +49,24 @@
     'desc profile profile profile profile'
     'desc profile profile profile profile'
     'desc profile profile profile profile'
-    'link1 link1 link1 . .'
-    'link2 link2 link2 . .'
+    'mediaLinks mediaLinks mediaLinks . .'
+    'mediaLinks mediaLinks mediaLinks . .'
   ;
 }
 
 @media screen and (min-width: 736px) {
+  
+    .main_content_container {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+    }
+
   #title {
     font-size: 3rem;
     height: 100px;
     width: 500px;
-    justify-self: center;
   }
   .iconLink {
     width: 6rem;
@@ -62,28 +75,18 @@
   #profile-pic {
     width: fit-content;
     height: 700px;
-    justify-self: center;
   }
   .description {
     font-size: 28px;
+    width: 600px;
   }
   .linkContainer {
     width: 400px;
     height: 65px;
     font-size: 20px;
-    justify-self: center;
   }
 
-  .main_content_container {
-    display: grid;
-    gap: 5px;
-    width: fit-content;
-    grid-template-areas:
-      '. name name .'
-      '. desc desc .'
-      '. desc desc .'
-      'profile profile profile profile'
-      'link1 link1 link2 link2'
-    ;
+  .mediaLinks {
+    display: flex;
   }
 }
