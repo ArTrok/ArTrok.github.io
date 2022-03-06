@@ -1,5 +1,6 @@
 .main_content_container5 {
   margin-top: 15%;
+  display: grid;
 };
 
 #message {
@@ -36,7 +37,7 @@
     height: 40px;
     font-size: 16px;
   }
-  .message {
+  #message {
     width: 500px;
     margin-top: -30px;
     height: 100px;
@@ -52,7 +53,7 @@
     transform: translateX(-50%);
     margin-top: 10%;
     height: 600px;
-    width:fit-content;
+    width:600px;
     padding-inline: 50px;
     padding-block: 30px;
   };

@@ -24,7 +24,7 @@ const Contact = () => {
     <div className="bg-deep-purple bg-opacity-50">
 
     <NavBar />
-    <motion.div variants={skillVariantMain} animate="visible" initial="hidden" className='main_content_container5 grid gap-5 p-3 justify-items-center bg-light-blue rounded-md'>
+    <motion.div variants={skillVariantMain} animate="visible" initial="hidden" className='main_content_container5 gap-5 p-3 justify-items-center bg-light-blue rounded-md'>
       <motion.h2 animate={{opacity: 1}} initial={{opacity: 0}} data-testid="ContactMe" className='text-dark-blue font-bold text-4xl'>Entre em Contato</motion.h2>
       <motion.input animate={{opacity: 1}} initial={{opacity: 0}} style={{opacity: 1, width: "216px"}} type="text" aria-label='Name' placeholder='Nome Completo' id='name' className='bg-dark-blue text-cream h-10 rounded-md p-2 name'/>
       <motion.input animate={{opacity: 1}} initial={{opacity: 0}} type="email" aria-label="Email" placeholder='E-Mail' id="email" className='bg-dark-blue text-cream rounded-md p-2'/>
