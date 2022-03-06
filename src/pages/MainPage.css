@@ -1,4 +1,4 @@
-.desc_pic img {
+#profile-pic {
   width: 45%;
   margin-top: 0.75rem;
   object-fit: cover;
@@ -37,11 +37,12 @@
 
 .desc_pic {
   display: flex;
+  width: fit-content;
+  margin-right: 20px;
 }
 
 .main_content_container {
   display: flex;
-  overflow: hidden;
   gap: 5px;
   flex-direction: column;
   align-items: center;
@@ -67,8 +68,8 @@
     width: 6rem;
     height: 60px;
   }
-  .desc_pic img {
-    width: fit-content;
+  #profile-pic {
+    width: auto;
     height: 700px;
   }
   .description {
