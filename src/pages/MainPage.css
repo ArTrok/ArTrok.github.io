@@ -37,6 +37,7 @@
 
 #description {
   grid-area: desc;
+  height: max-content;
   margin-inline: 10px;
 }
 
@@ -77,7 +78,6 @@
   .description {
     font-size: 28px;
     width: 600px;
-    height: max-content;
     margin: 20%;
   }
   .linkContainer {
