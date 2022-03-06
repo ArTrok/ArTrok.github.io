@@ -28,7 +28,9 @@ const Contact = () => {
       <motion.h2 animate={{opacity: 1}} initial={{opacity: 0}} data-testid="ContactMe" className='text-dark-blue font-bold text-4xl'>Entre em Contato</motion.h2>
       <motion.input animate={{opacity: 1}} initial={{opacity: 0}} style={{opacity: 1, width: "216px"}} type="text" aria-label='Name' placeholder='Nome Completo' id='name' className='bg-dark-blue text-cream h-10 rounded-md p-2 name'/>
       <motion.input animate={{opacity: 1}} initial={{opacity: 0}} type="email" aria-label="Email" placeholder='E-Mail' id="email" className='bg-dark-blue text-cream rounded-md p-2'/>
-      <motion.textarea animate={{opacity: 1}} initial={{opacity: 0}} aria-label="Message" id="message" placeholder='Mensagem' className='message resize-none bg-dark-blue text-cream rounded-md p-2' />
+      <div className='message_container'>
+        <motion.textarea animate={{opacity: 1}} initial={{opacity: 0}} aria-label="Message" id="message" rows="4" cols="45" placeholder='Mensagem' className='message resize-none bg-dark-blue text-cream rounded-md p-2 self-stretch' />
+      </div>
       <motion.button onClick={() => alert("Não implementado ainda. Fale comigo pelas redes sociais abaixo.")} animate={{opacity: 1}} initial={{opacity: 0}} whileHover={{ scale: 1.1, rotate: -3}} transition={{ type: "spring", stiffness: 2000}} whileTap={{ scale: 0.9, rotate: 3}} aria-label='Send_It' className='text-beige-green bg-dark-blue w-40 rounded-md font-bold send'>Enviar</motion.button>
       <div className="flex gap-5">
         <motion.a animate={{opacity: 1}} initial={{opacity: 0}} whileHover={{ scale: 1.1, rotate: 1}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: -1}} href='https://github.com/ArTrok' target="_blank" rel='noreferrer' aria-label='GitHub_L' className='flex items-center border-2 border-cream shadow-xl p-1 rounded-md link_button'>
