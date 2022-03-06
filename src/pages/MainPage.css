@@ -68,8 +68,8 @@
     height: 60px;
   }
   .desc_pic img {
-    /* width: fit-content;
-    height: 700px; */
+    width: fit-content;
+    height: 700px;
   }
   .description {
     font-size: 28px;
