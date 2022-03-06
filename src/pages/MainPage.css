@@ -1,5 +1,4 @@
 .desc_pic img {
-  grid-area: profile;
   width: 45%;
   margin-top: 0.75rem;
   object-fit: cover;
@@ -7,15 +6,12 @@
 
 #iconLink1 {
   margin-inline: 10px;
-  grid-area: link1;
 }
 #iconLink2 {
   margin-inline: 10px;
-  grid-area: link2;
 }
 
 .mediaLinks {
-  grid-area: mediaLinks;
   justify-self: center;
 }
 
@@ -30,13 +26,11 @@
 }
 
 #title {
-  grid-area: name;
   margin-inline: 20px;
   font-size: 20px;
 }
 
 #description {
-  grid-area: desc;
   height: max-content;
   margin-inline: 10px;
 }
@@ -73,8 +67,8 @@
     height: 60px;
   }
   .desc_pic img {
-    width: fit-content;
-    height: 700px;
+    /* width: fit-content;
+    height: 700px; */
   }
   .description {
     font-size: 28px;
