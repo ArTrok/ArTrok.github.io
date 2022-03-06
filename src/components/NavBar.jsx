@@ -12,22 +12,28 @@ import { motion } from 'framer-motion';
 const NavBar = () => {
   const location = useLocation();
   const [pageIcon, setPageIcon] = useState();
+  const [pageName, setPageName] = useState('');
   useEffect(() => {
     switch (location.pathname) {
       case '/':
         setPageIcon(HomePageIcon);
+        setPageName('Home')
         break;
       case '/about':
         setPageIcon(AboutPageIcon);
+        setPageName('Sobre Mim')
         break;
       case '/projects':
         setPageIcon(ProjectsPageIcon);
+        setPageName('Projetos')
         break;
       case '/skills':
         setPageIcon(SkillsPageIcon);
+        setPageName('Habilidades')
         break;
       case '/contact':
         setPageIcon(ContactPageIcon);
+        setPageName('Contato')
         break;
             
       default:
@@ -64,14 +70,16 @@ const NavBar = () => {
   function toggleMenu () {
     const navLinks = document.getElementById('navLinks');
     const menuEmote = document.getElementById('menuEmote');
+    const pageRoute = document.getElementById('pageRoute');
     navLinks.classList.toggle('show');
     menuEmote.classList.toggle('show');
+    pageRoute.classList.toggle('hide');
   }
 
   return (
     <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="navBar text-cream bg-light-blue bg-opacity-75" >
       <button onClick={() => toggleMenu()} className="menuIcon" id="menuIcon"><img src={MenuIcon} alt="Menu Icon" /></button>
-      <motion.img className='nav-button0' id='menuEmote' whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 500}} whileTap={{ scale: 0.8, rotate: -3 }} alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
+      <div className="pageRoute text-dark-blue" id="pageRoute">{pageName}</div>
       <div className='navLinks' id='navLinks'>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/" className='nav-button1' data-testid="Home_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
@@ -100,6 +108,7 @@ const NavBar = () => {
         </Link>
 
       </div>
+      <motion.img className='nav-button0' id='menuEmote' whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 500}} whileTap={{ scale: 0.8, rotate: -3 }} alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
   </motion.nav>
   )
 }
