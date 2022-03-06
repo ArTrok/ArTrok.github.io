@@ -2,6 +2,7 @@
   grid-area: profile;
   height: 200px;
   margin-top: 0.75rem;
+  object-fit: cover;
 }
 
 #iconLink1 {
@@ -39,19 +40,15 @@
   margin-inline: 10px;
 }
 
+.desc_pic {
+  display: flex;
+}
+
 .main_content_container {
-  display: grid;
+  display: flex;
   gap: 5px;
-  grid-template-areas: 
-    'name name name name name'
-    'name name name name name'
-    'desc profile profile profile profile'
-    'desc profile profile profile profile'
-    'desc profile profile profile profile'
-    'desc profile profile profile profile'
-    'mediaLinks mediaLinks mediaLinks . .'
-    'mediaLinks mediaLinks mediaLinks . .'
-  ;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 736px) {
@@ -79,6 +76,8 @@
   .description {
     font-size: 28px;
     width: 600px;
+    height: max-content;
+    margin: 20%;
   }
   .linkContainer {
     width: 400px;
