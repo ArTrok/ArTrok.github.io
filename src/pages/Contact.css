@@ -3,8 +3,8 @@
   display: grid;
 };
 
-#message {
-  width: 300px;
+textarea {
+  width: 350px;
 };
 
 #name {
@@ -37,7 +37,7 @@
     height: 40px;
     font-size: 16px;
   }
-  #message {
+  textarea {
     width: 500px;
     margin-top: -30px;
     height: 100px;
