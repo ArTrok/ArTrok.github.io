@@ -7,19 +7,19 @@
 
 .content1 {
   display: flex;
-  margin-top: 55%;
+  margin-top: 15%;
   gap: 5px;
   justify-content: center;
 }
 .content2 {
   display: flex;
-  margin-top: 60%;
+  margin-top: 70%;
   gap: 5px;
   justify-content: center;
 }
 .content3 {
   display: flex;
-  margin-top: 55%;
+  margin-top: 70%;
   gap: 5px;
   justify-content: center;
 }
@@ -48,7 +48,7 @@
   width: 290px;
 }
 .elF {
-  width: 110px;
+  width: 140px;
   object-fit: cover;
 }
 
