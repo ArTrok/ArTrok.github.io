@@ -14,6 +14,7 @@ const About = () => {
 
     <NavBar />
     <div className='main_content_container2 w-11/12 text-dark-blue p-1'>
+      <motion.p whileHover={{scale: 1.1, rotate: 1}} whileTap={{scale: 0.9, rotate: -1}} animate={{opacity: 1}} initial={{opacity: 0.1}} className='About_me bg-light-blue text-center rounded-md'>Sobre Mim</motion.p>
       <div className='content1'>
         <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description1" className='elA bg-light-blue self-center p-1 rounded-md'>
           Born in <em>Sao Paulo City, Brazil,</em> Arthur is a person with a lot of determination

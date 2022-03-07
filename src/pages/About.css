@@ -1,18 +1,25 @@
+/* .main_content_container2 {
+} */
+
+.About_me {
+  display: none;
+}
+
 .content1 {
   display: flex;
-  margin-top: 15%;
+  margin-top: 55%;
   gap: 5px;
   justify-content: center;
 }
 .content2 {
   display: flex;
-  margin-top: 15%;
+  margin-top: 60%;
   gap: 5px;
   justify-content: center;
 }
 .content3 {
   display: flex;
-  margin-top: 15%;
+  margin-top: 55%;
   gap: 5px;
   justify-content: center;
 }
@@ -105,5 +112,16 @@
     width: 300px;
     object-fit: cover;
     width: 45%;
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .About_me {
+    display: block;
+    font-size: 28px;
+    width: 30%;
+    margin-left: 37%;
+    justify-content: center;
+    margin-top: 3%;
   }
 }
