@@ -1,7 +1,18 @@
 #profile-pic {
-  width: 45%;
+  /* width: 45%; */
   margin-top: 0.75rem;
   object-fit: cover;
+}
+
+.picture-profile.profile-picture.lockdown-pic {
+  display: revert;
+  width: 45%;
+}
+
+.desc_pic {
+  display: flex;
+  width: fit-content;
+  margin-right: 20px;
 }
 
 #iconLink1 {
@@ -35,11 +46,6 @@
   margin-inline: 10px;
 }
 
-.desc_pic {
-  display: flex;
-  width: fit-content;
-  margin-right: 20px;
-}
 
 .main_content_container {
   display: flex;
@@ -57,6 +63,10 @@
     flex-direction: column;
     gap: 5px;
     align-items: center;
+  }
+
+  .picture-profile.profile-picture.lockdown-pic {
+
   }
 
   #title {
