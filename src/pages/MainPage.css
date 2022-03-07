@@ -1,12 +1,12 @@
 #profile-pic {
   /* width: 45%; */
   margin-top: 0.75rem;
-  object-fit: cover;
 }
 
 .picture-profile.profile-picture.lockdown-pic {
   display: revert;
   width: 45%;
+  object-fit: cover;
 }
 
 .desc_pic {
