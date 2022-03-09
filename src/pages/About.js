@@ -17,8 +17,7 @@ const About = () => {
       <motion.p whileHover={{scale: 1.1, rotate: 1}} whileTap={{scale: 0.9, rotate: -1}} animate={{opacity: 1}} initial={{opacity: 0.1}} className='About_me bg-light-blue text-center rounded-md'>Sobre Mim</motion.p>
       <div className='content1'>
         <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description1" className='elA bg-light-blue self-center p-1 rounded-md'>
-        Nascido na cidade de São Paulo, sempre gostei de tecnologia e praticar atividades físicas.
-         Apesar disso, nunca me imaginei atuando de forma profissional em nenhuma delas. 
+        Meu nome é Arthur Teixeira e sou de São Paulo, sempre gostei de tecnologia, praticar esportes e jogos de todos os tipos.
          Me graduei em engenharia química, porém não tinha a paixão necessária para seguir este caminho, 
          adquiri muito conhecimento que hoje é bastante útil para o <b>sonho que estou seguindo na área tech</b>.
         </motion.p>

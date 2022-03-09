@@ -18,7 +18,7 @@ export default function MainPage() {
             <motion.h1 whileHover={{ scale: 1.1, rotate: 1}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: -1}} id="title" className="text-dark-blue shadow-2xl bg-light-blue rounded-md my-3 text-center p-4">Arthur Teixeira Santos</motion.h1>
             <div className='desc_pic'>
             <motion.p id='description' data-testid="brief_description" whileHover={{ scale: 1.1, rotate: -1}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: 1}} className="description text-dark-blue shadow-2xl bg-light-blue rounded-md my-3 p-3">
-            Olá! Meu nome é Arthur e estou na jornada para a realização de um sonho. Me tornar um desenvolvedor na área da tecnologia melhor a cada dia.
+            Olá! Estou na jornada para a realização de um sonho. Me tornar um desenvolvedor melhor a cada dia na área da tecnologia.
             </motion.p>
             <motion.img whileHover={{ scale: 1.1, rotate: 5 }} transition={{ type: "just", stiffness: 500}} whileTap={{ scale: 0.8, rotate: -5
             }} src={ ProfilePicture } alt="Arthur T. Santos's face" id='profile-pic' className="rounded-md picture-profile profile-picture lockdown-pic" data-testid="profile_pic" />
