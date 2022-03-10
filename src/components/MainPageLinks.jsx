@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 import GitHubIcon from '../images/github-original.svg';
 import LinkedInIcon from '../images/linkedin-plain.svg';
