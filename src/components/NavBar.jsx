@@ -82,27 +82,27 @@ const NavBar = () => {
       <div className="pageRoute text-dark-blue" id="pageRoute">{pageName}</div>
       <div className='navLinks' id='navLinks'>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/" className='nav-button1' data-testid="Home_b">
-        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
+        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
           Home
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/about" className='nav-button2' data-testid="About_b">
-        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
+        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, backgroundColor: '#0084C1' }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 200, type: 'spring'}}>
           Sobre
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/projects" className='nav-button3' data-testid="Projects_b">
-        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
+        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
           Projetos
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/skills" className='nav-button4' data-testid="Skills_b">
-        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
+        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
           Habilidades
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/contact" className='nav-button5' data-testid="Contact_b">
-        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, rotate: 3 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
+        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8, rotate: -3 }} transition={{ stiffness: 500, type: 'spring'}}>
           Contato
         </motion.div>
         </Link>
