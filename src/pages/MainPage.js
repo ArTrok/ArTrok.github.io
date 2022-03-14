@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 import './MainPage.css';
 import MainPageLinks from '../components/MainPageLinks';
 
+// WILL BE USING CONTEXT API TO CHOOSE LANGUAGE OF THE ENTIRE PAGE
+
 export default function MainPage() {
   return (
     <div className='bg-planets'>
