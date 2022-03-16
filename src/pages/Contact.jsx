@@ -7,8 +7,6 @@ import './Contact.css';
 import { motion } from 'framer-motion';
 import Axios from 'axios';
 
-require('dotenv').config();
-
 const Contact = () => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -39,7 +37,7 @@ const Contact = () => {
   }
 
   function sendEmail () {
-    Axios.post(process.env.ENDPOINT_EMAIL, {email, message, name})
+    Axios.post(process.env.REACT_APP_ENDPOINT_EMAIL, {email, message, name})
       .then(res => {
         if(res.data.success) {
           setMessageSent(true);
