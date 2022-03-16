@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
-import MadeByMeSeal from '../components/MadeByMeSeal'
-import NavBar from '../components/NavBar'
+import React, { useState } from 'react';
+import MadeByMeSeal from '../components/MadeByMeSeal';
+import NavBar from '../components/NavBar';
 import GitHubIcon from '../images/github-original.svg';
 import LinkedInIcon from '../images/linkedin-plain.svg';
 import './Contact.css';
 import { motion } from 'framer-motion';
 import Axios from 'axios';
+
+require('dotenv').config();
 
 const Contact = () => {
   const [email, setEmail] = useState('');
@@ -37,7 +39,7 @@ const Contact = () => {
   }
 
   function sendEmail () {
-    Axios.post('https://nameless-savannah-47610.herokuapp.com/messager', {email, message, name})
+    Axios.post(process.env.ENDPOINT_EMAIL, {email, message, name})
       .then(res => {
         if(res.data.success) {
           setMessageSent(true);
