@@ -79,7 +79,7 @@ const NavBar = () => {
   return (
     <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="navBar text-cream bg-light-blue bg-opacity-75" >
       <button onClick={() => toggleMenu()} className="menuIcon" id="menuIcon"><img src={MenuIcon} alt="Menu Icon" /></button>
-      <div className="pageRoute text-dark-blue" id="pageRoute">{pageName}</div>
+      <div className="pageRoute text-cream" id="pageRoute">{pageName}</div>
       <div className='navLinks' id='navLinks'>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/" className='nav-button1' data-testid="Home_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
@@ -87,7 +87,7 @@ const NavBar = () => {
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/about" className='nav-button2' data-testid="About_b">
-        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1, backgroundColor: '#0084C1' }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
+        <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
           Sobre
         </motion.div>
         </Link>

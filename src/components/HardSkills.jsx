@@ -35,7 +35,7 @@ const HardSkills = ({icons}) => {
         <motion.div variants={skillVariant} animate="visible" initial="hidden" drag dragConstraints={{ left: 30, right: 30, top: 30, bottom: 30}} whileHover={{ scale: 1.1, rotate: 3}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: -3}} key={index} className={`icon_container${index}h text-dark-blue bg-light-blue p-3
          rounded-2xl w-32 h-auto`}>
         <img src={icon.link} alt={icon.alt} />
-        <p className='skill_name font-bold'>{icon.name}</p>
+        <p className='skill_name font-bold text-cream'>{icon.name}</p>
       </motion.div>)
     })}
     </motion.div>

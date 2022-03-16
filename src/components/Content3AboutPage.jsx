@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Content3AboutPage = () => {
   return (
     <>
-    <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description3" className='elE bg-light-blue self-center p-1 mr-20 rounded-md'>
+    <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description3" className='elE bg-deep-purple self-center p-2 mr-20 rounded-md'>
         Hoje estou fazendo um curso de desenvolvimento web pela Trybe e passando por experiências <b>MARAVILHOSAS</b>, tendo
          a oportunidade de basicamente simular um ambiente de trabalho como <b>developer</b>.
          Mesmo que apenas começando na área tech, me sinto muito mais realizado e 

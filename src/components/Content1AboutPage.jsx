@@ -5,7 +5,7 @@ import FunPic from '../images/meDoingPullUps.gif';
 const Content1MainPage = () => {
   return (
     <>
-      <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description1" className='elA bg-light-blue self-center p-1 rounded-md'>
+      <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description1" className='elA bg-deep-purple self-center p-2 rounded-md'>
       Meu nome é Arthur Teixeira e sou de São Paulo, sempre gostei de novidades, praticar esportes e jogos de todos os tipos.
         Me graduei em engenharia química pela Universidade Santo Amaro, onde adquiri muito conhecimento, mas não para fazer bombas.
         Apesar de minha formação, a paixão pela tecnologia falou mais alto, e hoje busco evoluir na área da <b>programação</b>. Tenho gostado
