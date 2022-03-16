@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   function sendEmail () {
-    Axios.post('http://localhost:3001/messager', {email, message, name})
+    Axios.post('https://nameless-savannah-47610.herokuapp.com/messager', {email, message, name})
       .then(res => {
         if(res.data.success) {
           setMessageSent(true);
