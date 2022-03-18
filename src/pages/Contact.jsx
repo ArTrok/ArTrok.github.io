@@ -69,7 +69,10 @@ const Contact = () => {
       <motion.h2 animate={{opacity: 1}} initial={{opacity: 0}} data-testid="ContactMe" className='text-cream font-bold text-4xl'>Entre em Contato</motion.h2>
       <motion.input onChange={handleChangeName} animate={{opacity: 1}} initial={{opacity: 0}} style={{opacity: 1, width: "216px"}} type="text" aria-label='Name' placeholder='Nome Completo' id='name' className='bg-light-blue text-cream h-10 rounded-md p-2 name'/>
       <motion.input onChange={handleChangeEmail} animate={{opacity: 1}} initial={{opacity: 0}} type="email" aria-label="Email" placeholder='E-Mail' id="email" className='bg-light-blue text-cream rounded-md p-2'/>
-        <motion.textarea onChange={handleChangeMessage} animate={{opacity: 1}} initial={{opacity: 0}} aria-label="Message" id="message" rows="4" cols="45" placeholder='Mensagem' className='message resize-none bg-light-blue text-cream rounded-md p-2 self-stretch' />
+        <div className="message rounded-md p-2 flex flex-col">
+        <motion.textarea onChange={handleChangeMessage} animate={{opacity: 1}} initial={{opacity: 0}} aria-label="Message" id="message" rows="4" cols="45" placeholder='Mensagem' className='resize-none bg-light-blue text-cream rounded self-stretch p-2' />
+        <div className="text-cream self-end">{message.length} caracteres</div>
+        </div> 
       <motion.button onClick={sendEmail} animate={{opacity: 1}} initial={{opacity: 0}} whileHover={{ scale: 1.1, rotate: -3}} transition={{ type: "spring", stiffness: 2000}} whileTap={{ scale: 0.9, rotate: 3}} aria-label='Send_It' className='text-beige-green bg-light-blue w-40 rounded-md font-bold send'>Enviar</motion.button>
       <div className='text-cream'>{messageSent}</div>
       <div className="flex gap-5">
