@@ -7,73 +7,88 @@
 
 .content1 {
   display: flex;
+  flex-flow: column-reverse;
   margin-top: 15%;
+  margin-left: 10%;
   gap: 5px;
   justify-content: center;
+  align-items: center;
 }
 .content2 {
   display: flex;
+  flex-flow: column;
   margin-top: 70%;
+  margin-left: 10%;
   gap: 5px;
   justify-content: center;
+  align-items: center;
 }
 .content3 {
   display: flex;
+  flex-flow: column-reverse;
   margin-top: 70%;
+  margin-left: 10%;
   gap: 5px;
+  align-items: center;
   justify-content: center;
 }
 
 .elA {
-  font-size: 11px;
-  width: 200px;
+  font-size: 16px;
+  width: 330px;
 }
 .elB {
-  height: 200px;
+  width: 300px;
   object-fit: cover;
   align-self: center;
 }
 .elC {
-  height: 200px;
-  /* margin-left: 10px; */
+  width: 200px;
+  height: 450px;
   object-fit: cover;
 }
 .elD {
-  font-size: 11px;
+  font-size: 16px;
   height: 200px;
-  width: 200px;
+  width: 330px;
 }
 .elE {
-  font-size: 11px;
+  font-size: 16px;
   height: 200px;
-  width: 290px;
+  width: 330px;
 }
 .elF {
-  width: 140px;
+  width: 330px;
   object-fit: cover;
 }
 
 @media screen and (min-width: 736px) {
   .content1 {
     display: flex;
+    flex-flow: row;
     margin-top: 15%;
     gap: 15px;
     align-content: center;
     justify-content: center;
+    margin-left: 0%;
   }
   .content2 {
     display: flex;
+    flex-flow: row;
     margin-top: 15%;
     gap: 15px;
     justify-content: center;
     align-content: center;
+    margin-left: 0%;
   }
   .content3 {
     display: flex;
+    flex-flow: row;
     margin-top: 15%;
     gap: 15px;
     align-content: center;
     justify-content: center;
+    margin-left: 0%;
   }
   
   .elA {
@@ -87,11 +102,12 @@
     height: 500px;
     object-fit: cover;
     width: 45%;
+    margin-left: 0%;
   }
   .elC {
     height: 700px;
     /* margin-left: 10px; */
-    /* width: 45%; */
+    width: 300px;
   }
   .elD {
     font-size: 20px;

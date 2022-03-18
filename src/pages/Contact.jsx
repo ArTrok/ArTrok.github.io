@@ -57,6 +57,7 @@ const Contact = () => {
         console.log(err);
         setMessageSent('Erro: Mensagem não enviada, tente novamente.');
       });
+      setMessageSent('Mensagem enviada!');
   };
 
   return (
