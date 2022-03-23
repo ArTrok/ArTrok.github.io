@@ -74,9 +74,11 @@ const NavBar = () => {
     const navLinks = document.getElementById('navLinks');
     const menuEmote = document.getElementById('menuEmote');
     const pageRoute = document.getElementById('pageRoute');
+    const langButton = document.getElementById('langButton');
     navLinks.classList.toggle('show');
     menuEmote.classList.toggle('show');
     pageRoute.classList.toggle('hide');
+    langButton.classList.toggle('show')
   }
 
   function toggleLang () {
@@ -116,10 +118,8 @@ const NavBar = () => {
         </Link>
 
       </div>
-      <div>
         <motion.img className='nav-button0' id='menuEmote' whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 500}} whileTap={{ scale: 0.8, rotate: -3 }} alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
-        <button onClick={toggleLang}>{ language === 'portuguese' ? 'English' : 'Português'}</button>
-      </div>
+        <button className='langButton p-1' id='langButton' onClick={toggleLang}>{ language === 'portuguese' ? 'EN/US' : 'PT/BR'}</button>
   </motion.nav>
   )
 }

@@ -1,6 +1,13 @@
-.navBar {
+/* .navBar {
   display: flex;
   justify-content:space-between;
+} */
+
+.navBar {
+  display: grid;
+  justify-content:space-between;
+  grid-template-areas: 
+    'menuIcon menuIcon menuIcon pageRoute pageRoute pageRoute pageRoute pageRoute pageRoute nav-button0 langButton';
 }
 
 .navLinks {
@@ -18,6 +25,14 @@
     ;
 }
 
+.langButton {
+  grid-area: langButton;
+}
+
+.langButton.show {
+  display: none;
+}
+
 .navLinks.show {
   display: grid;
 }
@@ -25,6 +40,7 @@
 .menuIcon {
   display: block;
   margin-left: 10px;
+  justify-self: center;
 }
 
 .nav-button0 {
@@ -35,7 +51,6 @@
 }
 
 .nav-button0.show {
-  grid-area: nav-button0;
   justify-self: center;
   height: 160px;
 }
@@ -47,8 +62,11 @@
 }
 
 .pageRoute {
+  grid-area: pageRoute;
   font-weight: bold;
   align-self: center;
+  text-align: center;
+  width: 220px;
   font-size: 20px;
 }
 
@@ -96,7 +114,7 @@
   .navBar {
     display: grid;
     grid-template-areas: 
-      'nav-button0 navLinks navLinks navLinks';
+      'nav-button0 nav-button0 navLinks navLinks navLinks langButton langButton';
   }
 
   .nav-button0 {
@@ -110,6 +128,10 @@
 
   .menuIcon {
     display: none;
+  }
+
+  .langButton {
+    position: relative;
   }
 
   nav div{
