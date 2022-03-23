@@ -46,7 +46,7 @@ const Contact = () => {
 
     if (!nameChecking) return setMessageSent(language === 'portuguese' ? 'Nome precisa ter mais de 3 caracteres' : 'The name must have more than 3 characters');
     if (!emailChecking) return setMessageSent(language === 'portuguese' ? 'Insira um e-mail válido' : 'Enter a valid email');
-    if (!messageChecking) return setMessageSent(language === 'portuguese' ? 'Mensagem precisa ter pelo menos 100 caracteres' : 'The message must have more than 50 characters');
+    if (!messageChecking) return setMessageSent(language === 'portuguese' ? 'Mensagem precisa ter pelo menos 50 caracteres' : 'The message must have more than 50 characters');
     Axios.post(process.env.REACT_APP_ENDPOINT_EMAIL, {email, message, name})
       .then(res => {
         if(res.data.success) {
