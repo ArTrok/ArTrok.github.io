@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import HomePageIcon from '../images/wavyLirik.gif'; 
 import AboutPageIcon from '../images/meLirik.png'; 
@@ -6,13 +6,16 @@ import ProjectsPageIcon from '../images/Hackermans.gif';
 import SkillsPageIcon from '../images/tiLirik.png'; 
 import ContactPageIcon from '../images/lirikHullo.png';
 import MenuIcon from '../images/MenuIcon.svg';
+import AppContext from '../context/ContextAPI';
 import './NavBar.css';
 import { motion } from 'framer-motion';
 
 const NavBar = () => {
+  const { language, setLanguage } = useContext(AppContext);
   const location = useLocation();
   const [pageIcon, setPageIcon] = useState();
   const [pageName, setPageName] = useState('');
+  const langs = ['english', 'portuguese'];
   useEffect(() => {
     switch (location.pathname) {
       case '/':
@@ -76,6 +79,11 @@ const NavBar = () => {
     pageRoute.classList.toggle('hide');
   }
 
+  function toggleLang () {
+    if (language === 'portuguese') setLanguage(langs[0]);
+    if (language === 'english') setLanguage(langs[1]);
+  }
+
   return (
     <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="navBar text-cream bg-light-blue bg-opacity-75" >
       <button onClick={() => toggleMenu()} className="menuIcon" id="menuIcon"><img src={MenuIcon} alt="Menu Icon" /></button>
@@ -108,7 +116,10 @@ const NavBar = () => {
         </Link>
 
       </div>
-      <motion.img className='nav-button0' id='menuEmote' whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 500}} whileTap={{ scale: 0.8, rotate: -3 }} alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
+      <div>
+        <motion.img className='nav-button0' id='menuEmote' whileHover={{ scale: 1.2 }} transition={{ type: 'spring', stiffness: 500}} whileTap={{ scale: 0.8, rotate: -3 }} alt="Emote regarding page" src={ pageIcon } aria-label="pageEmote" />
+        <button onClick={toggleLang}>{ language === 'portuguese' ? 'English' : 'Português'}</button>
+      </div>
   </motion.nav>
   )
 }
