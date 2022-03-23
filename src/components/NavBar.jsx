@@ -87,7 +87,7 @@ const NavBar = () => {
   }
 
   return (
-    <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="navBar text-cream bg-light-blue bg-opacity-75" >
+    <motion.nav variants={skillVariantMain} animate="visible" initial="hidden" className="navBar text-cream bg-other-purple bg-opacity-75" >
       <button onClick={() => toggleMenu()} className="menuIcon" id="menuIcon"><img src={MenuIcon} alt="Menu Icon" /></button>
       <div className="pageRoute text-cream" id="pageRoute">{pageName}</div>
       <div className='navLinks' id='navLinks'>
