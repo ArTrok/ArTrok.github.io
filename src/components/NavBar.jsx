@@ -20,29 +20,29 @@ const NavBar = () => {
     switch (location.pathname) {
       case '/':
         setPageIcon(HomePageIcon);
-        setPageName('Home')
+        setPageName(language === 'portuguese' ? 'Home' : 'Home')
         break;
       case '/about':
         setPageIcon(AboutPageIcon);
-        setPageName('Sobre Mim')
+        setPageName(language === 'portuguese' ? 'Sobre Mim' : 'About')
         break;
       case '/projects':
         setPageIcon(ProjectsPageIcon);
-        setPageName('Projetos')
+        setPageName(language === 'portuguese' ? 'Projetos' : 'Projects')
         break;
       case '/skills':
         setPageIcon(SkillsPageIcon);
-        setPageName('Habilidades')
+        setPageName(language === 'portuguese' ? 'Habilidades' : 'Skills')
         break;
       case '/contact':
         setPageIcon(ContactPageIcon);
-        setPageName('Contato')
+        setPageName(language === 'portuguese' ? 'Contato' : 'Contact')
         break;
             
       default:
         break;
     }
-  }, [location.pathname]);
+  }, [location.pathname, language]);
 
   const skillVariant = {
     hidden: {
@@ -93,27 +93,27 @@ const NavBar = () => {
       <div className='navLinks' id='navLinks'>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/" className='nav-button1' data-testid="Home_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
-          Home
+          {language === 'portuguese' ? 'Home' : 'Home'}
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/about" className='nav-button2' data-testid="About_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
-          Sobre
+          {language === 'portuguese' ? 'Sobre' : 'About'}
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/projects" className='nav-button3' data-testid="Projects_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
-          Projetos
+          {language === 'portuguese' ? 'Projetos' : 'Projects'}
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/skills" className='nav-button4' data-testid="Skills_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
-          Habilidades
+          {language === 'portuguese' ? 'Habilidades' : 'Skills'}
         </motion.div>
         </Link>
         <Link variants={skillVariant} animate="visible" initial="hidden" to="/contact" className='nav-button5' data-testid="Contact_b">
         <motion.div className=' rounded-md bg-dark-blue shadow-2xl' whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} transition={{ stiffness: 400, type: 'spring'}}>
-          Contato
+          {language === 'portuguese' ? 'Contato' : 'Contact'}
         </motion.div>
         </Link>
 

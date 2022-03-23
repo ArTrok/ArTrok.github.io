@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import MadeByMeSeal from '../components/MadeByMeSeal';
 import NavBar from '../components/NavBar';
 import JavaScript from '../images/skills_icons/javascript-original.svg';
@@ -21,18 +21,21 @@ import Emotional from '../images/skills_icons/emotional.png';
 import Communication from '../images/skills_icons/communication.png';
 import SoftSkils from '../components/SoftSkils';
 import HardSkills from '../components/HardSkills';
+import AppContext from '../context/ContextAPI';
 
-const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
- { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},
- { name: 'CSS', link: CSS, alt: 'CSS_icon'}, { name: 'MySQL', link: MySQL, alt: 'MySQL_icon'},
- { name: 'Docker', link: Docker, alt: 'Docker_icon'}, { name: 'Express', link: Express, alt: 'Express_icon'},
- { name: 'GitHib', link: GitHub, alt: 'GitHub_icon'}, { name: 'Git', link: Git, alt: 'Git_icon'}];
- const iconsSoft = [{link: Critical, text: 'Pensamento Crítico'},
- {link: Creativity, text: 'Criatividade'},
- {link: LearnToLearn, text: 'Aprender a aprender'},
- {link: Colab, text: 'Colaboração'}, {link: Emotional, text: 'Inteligência Emocional'}, {link: Communication, text: 'Comunicação'}];
 
 const Skills = () => {
+  const { language } = useContext(AppContext);
+
+  const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
+   { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},
+   { name: 'CSS', link: CSS, alt: 'CSS_icon'}, { name: 'MySQL', link: MySQL, alt: 'MySQL_icon'},
+   { name: 'Docker', link: Docker, alt: 'Docker_icon'}, { name: 'Express', link: Express, alt: 'Express_icon'},
+   { name: 'GitHib', link: GitHub, alt: 'GitHub_icon'}, { name: 'Git', link: Git, alt: 'Git_icon'}];
+   const iconsSoft = [{link: Critical, text: language === 'portuguese' ? 'Pensamento Crítico' : 'Critical Thinking'},
+   {link: Creativity, text: language === 'portuguese' ? 'Criatividade' : 'Creativity'},
+   {link: LearnToLearn, text: language === 'portuguese' ? 'Aprender a aprender' : 'Learn how to Learn'},
+   {link: Colab, text: language === 'portuguese' ? 'Colaboração' : 'Colaboration'}, {link: Emotional, text: language === 'portuguese' ? 'Inteligência Emocional' : 'Emotional Intelligence'}, {link: Communication, text: language === 'portuguese' ? 'Comunicação' : 'Communication'}];
   return (
     <div className="bg-planets">
     <div className="bg-deep-purple bg-opacity-50">

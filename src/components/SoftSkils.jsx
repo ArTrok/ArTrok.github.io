@@ -32,7 +32,7 @@ const SoftSkils = ({iconsSoft}) => {
     <h2 className='bg-dark-blue text-cream soft_skills_title text-center text-3xl font-bold  w-full rounded-xl'>Soft Skills</h2>
     {iconsSoft.map((icon, index) => {
       return (
-        <motion.div variants={skillVariant} animate="visible" initial="hidden" drag dragConstraints={{ left: 30, right: 30, top: 30, bottom: 30}} whileHover={{ scale: 1.1, rotate: -3}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: 3}} key={index} className={`icon_container${index}s bg-light-blue p-3
+        <motion.div variants={skillVariant} animate="visible" initial="hidden" drag dragConstraints={{ left: 30, right: 30, top: 30, bottom: 30}} whileHover={{ scale: 1.1, rotate: -3}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: 3}} key={index} className={`icon_limit icon_container${index}s bg-light-blue p-3
         rounded-2xl w-32 h-auto`}>
         <img src={icon.link} alt={icon.text} />
         <p className='skill_name font-bold text-cream'>{icon.text}</p>

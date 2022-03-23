@@ -15,6 +15,10 @@
   margin-bottom: 0%; */
 }
 
+.icon_limit {
+  width: 148px;
+}
+
 .main_content_container4 {
   display: flex;
   justify-content: center;

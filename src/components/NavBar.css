@@ -1,8 +1,3 @@
-/* .navBar {
-  display: flex;
-  justify-content:space-between;
-} */
-
 .navBar {
   display: grid;
   justify-content:space-between;
