@@ -31,7 +31,7 @@ const Skills = () => {
    { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},
    { name: 'CSS', link: CSS, alt: 'CSS_icon'}, { name: 'MySQL', link: MySQL, alt: 'MySQL_icon'},
    { name: 'Docker', link: Docker, alt: 'Docker_icon'}, { name: 'Express', link: Express, alt: 'Express_icon'},
-   { name: 'GitHib', link: GitHub, alt: 'GitHub_icon'}, { name: 'Git', link: Git, alt: 'Git_icon'}];
+   { name: 'GitHub', link: GitHub, alt: 'GitHub_icon'}, { name: 'Git', link: Git, alt: 'Git_icon'}];
    const iconsSoft = [{link: Critical, text: language === 'portuguese' ? 'Pensamento Crítico' : 'Critical Thinking'},
    {link: Creativity, text: language === 'portuguese' ? 'Criatividade' : 'Creativity'},
    {link: LearnToLearn, text: language === 'portuguese' ? 'Aprender a aprender' : 'Learn how to Learn'},
