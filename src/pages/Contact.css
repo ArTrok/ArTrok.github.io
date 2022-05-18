@@ -69,6 +69,9 @@
   .link_button img {
     height: 50px;
   }
+  .emailText {
+    font-size: 20px;
+  }
   .send {
     height: 55px;
     /* padding-block: 20px; */
