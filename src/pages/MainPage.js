@@ -7,8 +7,6 @@ import './MainPage.css';
 import MainPageLinks from '../components/MainPageLinks';
 import AppContext from '../context/ContextAPI';
 
-// WILL BE USING CONTEXT API TO CHOOSE LANGUAGE OF THE ENTIRE PAGE
-
 export default function MainPage() {
   const { language } = useContext(AppContext);
   return (
