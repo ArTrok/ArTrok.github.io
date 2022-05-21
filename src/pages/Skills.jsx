@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import MadeByMeSeal from '../components/MadeByMeSeal';
 import NavBar from '../components/NavBar';
 import JavaScript from '../images/skills_icons/javascript-original.svg';
+import Java from '../images/skills_icons/java-original-wordmark.svg';
+import TypeScript from '../images/skills_icons/typescript-original.svg';
 import ReactJS from '../images/skills_icons/react-original.svg';
 import NodeJS from '../images/skills_icons/nodejs-original.svg';
 import Redux from '../images/skills_icons/redux-original.svg';
@@ -27,7 +29,7 @@ import AppContext from '../context/ContextAPI';
 const Skills = () => {
   const { language } = useContext(AppContext);
 
-  const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
+  const icons = [{ name: 'JavaScript', link: JavaScript, alt: 'JavaScript_icon' }, { name: 'Java', link: Java, alt: 'Java_icon' }, { name: 'TypeScript', link: TypeScript, alt: 'TypeScript_icon' }, { name: 'ReactJS', link: ReactJS, alt: 'ReactJS_icon' },
    { name: 'NodeJS', link: NodeJS, alt: 'NodeJS_icon'}, { name: 'Redux', link: Redux, alt: 'Redux_icon'}, { name: 'Jest', link: Jest, alt: 'Jest_icon'}, { name: 'TailwindCSS', link: TailwindCSS, alt: 'TailwindCSS_icon'},
    { name: 'CSS', link: CSS, alt: 'CSS_icon'}, { name: 'MySQL', link: MySQL, alt: 'MySQL_icon'},
    { name: 'Docker', link: Docker, alt: 'Docker_icon'}, { name: 'Express', link: Express, alt: 'Express_icon'},
