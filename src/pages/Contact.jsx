@@ -8,6 +8,8 @@ import AppContext from '../context/ContextAPI';
 import { motion } from 'framer-motion';
 import Axios from 'axios';
 
+const copy = require('clipboard-copy');
+
 const Contact = () => {
   const { language } = useContext(AppContext);
   const [email, setEmail] = useState('');
@@ -62,6 +64,11 @@ const Contact = () => {
       setMessageSent(language === 'portuguese' ? 'Mensagem enviada com sucesso!' : 'Message sent with success!');
   };
 
+  function copyEmail () {
+    copy('arthurteixeira0805@gmail.com');
+    setMessageSent(language === 'portuguese' ? 'Email copiado!' : 'Copied email!');
+  }
+
   return (
     <div className='bg-planets'>
     <div className="bg-deep-purple bg-opacity-50">
@@ -77,7 +84,7 @@ const Contact = () => {
         </div> 
       <motion.button onClick={sendEmail} animate={{opacity: 1}} initial={{opacity: 0}} whileHover={{ scale: 1.1, rotate: -3}} transition={{ type: "spring", stiffness: 2000}} whileTap={{ scale: 0.9, rotate: 3}} aria-label='Send_It' className='text-beige-green bg-light-blue w-40 rounded-md font-bold send'>{language === 'portuguese' ? 'Enviar' : 'Submit'}</motion.button>
       <div className='text-cream'>{messageSent}</div>
-      <p className='text-cream emailText'>email: arthurteixeira0805@gmail.com</p>
+      <p className='text-cream emailText' onClick={ copyEmail }>email: arthurteixeira0805@gmail.com</p>
       <div className="flex gap-5">
         <motion.a animate={{opacity: 1}} initial={{opacity: 0}} whileHover={{ scale: 1.1, rotate: 1}} transition={{ type: "spring", stiffness: 500}} whileTap={{ scale: 0.9, rotate: -1}} href='https://github.com/ArTrok' target="_blank" rel='noreferrer' aria-label='GitHub_L' className='flex items-center border-2 border-cream text-cream bg-light-blue shadow-xl p-1 rounded-md link_button'>
         GitHub
