@@ -126,3 +126,94 @@
     width: 48%;
   };
 }
+
+.soft_skills_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1/2fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  'soft_skills_title soft_skills_title'
+  "icon_container0s icon_container1s"
+  "icon_container2s icon_container3s"
+  "icon_container4s icon_container5s";
+  gap: 5%;
+  margin-top: 130%;
+  /* 
+  margin-right: 10%;
+  margin-bottom: 10%; */
+  justify-items: center;
+}
+
+.soft_skills_title {
+  grid-area: soft_skills_title;
+};
+
+.icon_container0s {
+  grid-area: icon_container0s;
+}
+
+.icon_container1s {
+  grid-area: icon_container1s;
+}
+
+.icon_container2s {
+  grid-area: icon_container2s;
+}
+
+.icon_container3s {
+  grid-area: icon_container3s;
+}
+
+.icon_container4s {
+  grid-area: icon_container4s;
+}
+
+.icon_container5s {
+  grid-area: icon_container5s;
+}
+
+.skill_name {
+  text-align: center;
+}
+
+@media screen and (min-width: 706px) {
+  .soft_skills_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/2fr 1fr 1fr;
+    grid-template-areas: 
+    'soft_skills_title soft_skills_title soft_skills_title soft_skills_title'
+    "icon_container0s icon_container1s icon_container2s icon_container3s"
+    "icon_container4s icon_container5s . .";
+    gap: 5%;
+    justify-items: center;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  .soft_skills_title {
+    width: 48%;
+  };
+}
+
+@media screen and (min-width: 1124px) {
+  .soft_skills_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1/2fr 1fr;
+    grid-template-areas: 
+    'soft_skills_title soft_skills_title soft_skills_title soft_skills_title soft_skills_title soft_skills_title'
+    "icon_container0s icon_container1s icon_container2s icon_container3s icon_container4s icon_container5s";
+    gap: 5%;
+    justify-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+
+  .soft_skills_title {
+    width: 48%;
+  };
+}

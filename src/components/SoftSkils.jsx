@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './SoftSkills.css';
 
 const SoftSkils = ({iconsSoft}) => {
   const skillVariant = {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './HardSkills.css';
 
 const HardSkills = ({icons}) => {
   const skillVariant = {

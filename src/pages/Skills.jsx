@@ -24,6 +24,7 @@ import Communication from '../images/skills_icons/communication.png';
 import SoftSkils from '../components/SoftSkils';
 import HardSkills from '../components/HardSkills';
 import AppContext from '../context/ContextAPI';
+import './Skills.css';
 
 
 const Skills = () => {
