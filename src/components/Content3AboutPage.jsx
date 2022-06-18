@@ -7,7 +7,8 @@ const Content3AboutPage = ({language}) => {
     <>
     {language === 'portuguese' ? (
     <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description3" className='elE bg-deep-purple self-center p-2 mr-20 rounded-md'>
-        Hoje estou fazendo um curso de desenvolvimento web pela Trybe e passando por experiências <b>MARAVILHOSAS</b>, tendo
+        Hoje trabalho como Programador Júnior pela Digimed! E estou fazendo um curso de desenvolvimento web
+         pela Trybe e passando por experiências <b>MARAVILHOSAS</b>, tendo
          a oportunidade de basicamente simular um ambiente de trabalho como <b>developer</b>.
          Mesmo que apenas começando na área tech, me sinto muito mais realizado e 
         com um futuro brilhante a frente, de uma forma que nunca havia imaginado antes. 
@@ -15,7 +16,8 @@ const Content3AboutPage = ({language}) => {
         sempre buscar por mais a fim de me tornar um ser humano melhor, ficar acomodado não é pra mim.
         </motion.p>) : (
     <motion.p whileInView={{scale: 1.05}} transition={{duration: 1}} id='description' data-testid="brief_description3" className='elE bg-deep-purple self-center p-2 mr-20 rounded-md'>
-        Today I'm taking a web development course at Trybe and going through <b>WONDERFUL</b> experiences, having
+        Currently I'm working as a Junior Programmer for Digimed! And I'm taking a web development course at Trybe
+         and going through <b>WONDERFUL</b> experiences, having
          the opportunity to basically simulate a working environment as a <b>DEVELOPER</b>.
          Even if I'm just starting in the tech area, I feel much more accomplished and
         with a brighter future ahead, in a way I never imagined before.
